@@ -1,0 +1,15 @@
+{
+  "showCLICommands": false,
+  "addExtensionsToInternalLinks": "html",
+  "injectAppCSS": "current",
+  "injectThemeCSS": false,
+  "customCSSFile": null,
+  "displayYAMLFrontmatter": false,
+  "linkStrippingBehaviour": "text",
+  "highDPIDiagrams": true,
+  "pandoc": "C:\\Users\\Rita_NTthinkpad\\AppData\\Local\\Pandoc\\pandoc.exe",
+  "pdflatex": null,
+  "outputFolder": null,
+  "extraArguments": "--pdf-engine=xelatex -V CJKmainfont=\"Simsun\"",
+  "exportFrom": "md"
+}

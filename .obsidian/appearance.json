@@ -1,0 +1,12 @@
+{
+  "accentColor": "#39938d",
+  "theme": "system",
+  "interfaceFontFamily": "微软雅黑",
+  "textFontFamily": "宋体",
+  "monospaceFontFamily": "Consolas",
+  "translucency": false,
+  "cssTheme": "Big Sur Aesthetic",
+  "enabledCssSnippets": [
+    "my_snippets"
+  ]
+}

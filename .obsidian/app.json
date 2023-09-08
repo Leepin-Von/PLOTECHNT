@@ -1,0 +1,8 @@
+{
+  "newLinkFormat": "shortest",
+  "useMarkdownLinks": true,
+  "alwaysUpdateLinks": true,
+  "attachmentFolderPath": "./images",
+  "showLineNumber": false,
+  "vimMode": false
+}
