@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "56fbf5ed0b07ee60",
+        "id": "dbc29f60e7e46753",
         "type": "tabs",
         "children": [
           {
-            "id": "034d57da27f492ca",
+            "id": "5131a2e27d6e7e88",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PLC程式新增IOT_MES之部分说明.md",
+                "file": "IOT_MES各功能说明.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "2624447525473f45",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PLC程式新增IOT_MES之部分说明.md",
+                "file": "IOT_MES各功能说明.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "PLC程式新增IOT_MES之部分说明.md",
+                "file": "IOT_MES各功能说明.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PLC程式新增IOT_MES之部分说明.md"
+                "file": "IOT_MES各功能说明.md"
               }
             }
           }
@@ -147,11 +148,15 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "034d57da27f492ca",
+  "active": "5131a2e27d6e7e88",
   "lastOpenFiles": [
+    "IOT_MES各功能说明.epub",
+    "IOT_MES各功能说明.pandoc.md",
+    "IOT_MES各功能说明.pandoc.html",
     "IOT_MES各功能说明.md",
-    "设置机台与Reader的通讯协议.md",
+    "IOT_MES各功能说明.html",
     "PLC程式新增IOT_MES之部分说明.md",
+    "设置机台与Reader的通讯协议.md",
     "images/Pastedimage20230831112525.png",
     "images/Pastedimage20230831112104.png",
     "images/Pasted image 20230831112148.png",
@@ -162,7 +167,6 @@
     "images/Pastedimage20230831092805.png",
     "images/Pastedimage20230831092515.png",
     "images/Pastedimage20230831091200.png",
-    "IOT_MES各功能说明.html",
     "Untitled.html",
     "新建 文本文档.txt",
     "styles.css",
