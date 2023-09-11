@@ -1,0 +1,1991 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <style>
+  @font-face {
+  font-family: octicons-link;
+  src: url(data:font/woff;charset=utf-8;base64,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) format('woff');
+}
+
+.markdown-body .octicon {
+  display: inline-block;
+  fill: currentColor;
+  vertical-align: text-bottom;
+}
+
+.markdown-body .anchor {
+  float: left;
+  line-height: 1;
+  margin-left: -20px;
+  padding-right: 4px;
+}
+
+.markdown-body .anchor:focus {
+  outline: none;
+}
+
+.markdown-body h1 .octicon-link,
+.markdown-body h2 .octicon-link,
+.markdown-body h3 .octicon-link,
+.markdown-body h4 .octicon-link,
+.markdown-body h5 .octicon-link,
+.markdown-body h6 .octicon-link {
+  color: #1b1f23;
+  vertical-align: middle;
+  visibility: hidden;
+}
+
+.markdown-body h1:hover .anchor,
+.markdown-body h2:hover .anchor,
+.markdown-body h3:hover .anchor,
+.markdown-body h4:hover .anchor,
+.markdown-body h5:hover .anchor,
+.markdown-body h6:hover .anchor {
+  text-decoration: none;
+}
+
+.markdown-body h1:hover .anchor .octicon-link,
+.markdown-body h2:hover .anchor .octicon-link,
+.markdown-body h3:hover .anchor .octicon-link,
+.markdown-body h4:hover .anchor .octicon-link,
+.markdown-body h5:hover .anchor .octicon-link,
+.markdown-body h6:hover .anchor .octicon-link {
+  visibility: visible;
+}
+
+.markdown-body {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  color: #24292e;
+  line-height: 1.5;
+  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+  font-size: 16px;
+  line-height: 1.5;
+  word-wrap: break-word;
+}
+
+.markdown-body .pl-c {
+  color: #6a737d;
+}
+
+.markdown-body .pl-c1,
+.markdown-body .pl-s .pl-v {
+  color: #005cc5;
+}
+
+.markdown-body .pl-e,
+.markdown-body .pl-en {
+  color: #6f42c1;
+}
+
+.markdown-body .pl-s .pl-s1,
+.markdown-body .pl-smi {
+  color: #24292e;
+}
+
+.markdown-body .pl-ent {
+  color: #22863a;
+}
+
+.markdown-body .pl-k {
+  color: #d73a49;
+}
+
+.markdown-body .pl-pds,
+.markdown-body .pl-s,
+.markdown-body .pl-s .pl-pse .pl-s1,
+.markdown-body .pl-sr,
+.markdown-body .pl-sr .pl-cce,
+.markdown-body .pl-sr .pl-sra,
+.markdown-body .pl-sr .pl-sre {
+  color: #032f62;
+}
+
+.markdown-body .pl-smw,
+.markdown-body .pl-v {
+  color: #e36209;
+}
+
+.markdown-body .pl-bu {
+  color: #b31d28;
+}
+
+.markdown-body .pl-ii {
+  background-color: #b31d28;
+  color: #fafbfc;
+}
+
+.markdown-body .pl-c2 {
+  background-color: #d73a49;
+  color: #fafbfc;
+}
+
+.markdown-body .pl-c2:before {
+  content: "^M";
+}
+
+.markdown-body .pl-sr .pl-cce {
+  color: #22863a;
+  font-weight: 700;
+}
+
+.markdown-body .pl-ml {
+  color: #735c0f;
+}
+
+.markdown-body .pl-mh,
+.markdown-body .pl-mh .pl-en,
+.markdown-body .pl-ms {
+  color: #005cc5;
+  font-weight: 700;
+}
+
+.markdown-body .pl-mi {
+  color: #24292e;
+  font-style: italic;
+}
+
+.markdown-body .pl-mb {
+  color: #24292e;
+  font-weight: 700;
+}
+
+.markdown-body .pl-md {
+  background-color: #ffeef0;
+  color: #b31d28;
+}
+
+.markdown-body .pl-mi1 {
+  background-color: #f0fff4;
+  color: #22863a;
+}
+
+.markdown-body .pl-mc {
+  background-color: #ffebda;
+  color: #e36209;
+}
+
+.markdown-body .pl-mi2 {
+  background-color: #005cc5;
+  color: #f6f8fa;
+}
+
+.markdown-body .pl-mdr {
+  color: #6f42c1;
+  font-weight: 700;
+}
+
+.markdown-body .pl-ba {
+  color: #586069;
+}
+
+.markdown-body .pl-sg {
+  color: #959da5;
+}
+
+.markdown-body .pl-corl {
+  color: #032f62;
+  text-decoration: underline;
+}
+
+.markdown-body details {
+  display: block;
+}
+
+.markdown-body summary {
+  display: list-item;
+}
+
+.markdown-body a {
+  background-color: transparent;
+}
+
+.markdown-body a:active,
+.markdown-body a:hover {
+  outline-width: 0;
+}
+
+.markdown-body strong {
+  font-weight: inherit;
+  font-weight: bolder;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+  margin: .67em 0;
+}
+
+.markdown-body img {
+  border-style: none;
+}
+
+.markdown-body code,
+.markdown-body kbd,
+.markdown-body pre {
+  font-family: monospace,monospace;
+  font-size: 1em;
+}
+
+.markdown-body hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+.markdown-body input {
+  font: inherit;
+  margin: 0;
+}
+
+.markdown-body input {
+  overflow: visible;
+}
+
+.markdown-body [type=checkbox] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.markdown-body * {
+  box-sizing: border-box;
+}
+
+.markdown-body input {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.markdown-body a {
+  color: #0366d6;
+  text-decoration: none;
+}
+
+.markdown-body a:hover {
+  text-decoration: underline;
+}
+
+.markdown-body strong {
+  font-weight: 600;
+}
+
+.markdown-body hr {
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #dfe2e5;
+  height: 0;
+  margin: 15px 0;
+  overflow: hidden;
+}
+
+.markdown-body hr:before {
+  content: "";
+  display: table;
+}
+
+.markdown-body hr:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.markdown-body table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.markdown-body td,
+.markdown-body th {
+  padding: 0;
+}
+
+.markdown-body details summary {
+  cursor: pointer;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.markdown-body h1 {
+  font-size: 32px;
+}
+
+.markdown-body h1,
+.markdown-body h2 {
+  font-weight: 600;
+}
+
+.markdown-body h2 {
+  font-size: 24px;
+}
+
+.markdown-body h3 {
+  font-size: 20px;
+}
+
+.markdown-body h3,
+.markdown-body h4 {
+  font-weight: 600;
+}
+
+.markdown-body h4 {
+  font-size: 16px;
+}
+
+.markdown-body h5 {
+  font-size: 14px;
+}
+
+.markdown-body h5,
+.markdown-body h6 {
+  font-weight: 600;
+}
+
+.markdown-body h6 {
+  font-size: 12px;
+}
+
+.markdown-body p {
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+.markdown-body blockquote {
+  margin: 0;
+}
+
+.markdown-body ol,
+.markdown-body ul {
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-left: 0;
+}
+
+.markdown-body ol ol,
+.markdown-body ul ol {
+  list-style-type: lower-roman;
+}
+
+.markdown-body ol ol ol,
+.markdown-body ol ul ol,
+.markdown-body ul ol ol,
+.markdown-body ul ul ol {
+  list-style-type: lower-alpha;
+}
+
+.markdown-body dd {
+  margin-left: 0;
+}
+
+.markdown-body code,
+.markdown-body pre {
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  font-size: 12px;
+}
+
+.markdown-body pre {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.markdown-body input::-webkit-inner-spin-button,
+.markdown-body input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+.markdown-body .border {
+  border: 1px solid #e1e4e8!important;
+}
+
+.markdown-body .border-0 {
+  border: 0!important;
+}
+
+.markdown-body .border-bottom {
+  border-bottom: 1px solid #e1e4e8!important;
+}
+
+.markdown-body .rounded-1 {
+  border-radius: 3px!important;
+}
+
+.markdown-body .bg-white {
+  background-color: #fff!important;
+}
+
+.markdown-body .bg-gray-light {
+  background-color: #fafbfc!important;
+}
+
+.markdown-body .text-gray-light {
+  color: #6a737d!important;
+}
+
+.markdown-body .mb-0 {
+  margin-bottom: 0!important;
+}
+
+.markdown-body .my-2 {
+  margin-bottom: 8px!important;
+  margin-top: 8px!important;
+}
+
+.markdown-body .pl-0 {
+  padding-left: 0!important;
+}
+
+.markdown-body .py-0 {
+  padding-bottom: 0!important;
+  padding-top: 0!important;
+}
+
+.markdown-body .pl-1 {
+  padding-left: 4px!important;
+}
+
+.markdown-body .pl-2 {
+  padding-left: 8px!important;
+}
+
+.markdown-body .py-2 {
+  padding-bottom: 8px!important;
+  padding-top: 8px!important;
+}
+
+.markdown-body .pl-3,
+.markdown-body .px-3 {
+  padding-left: 16px!important;
+}
+
+.markdown-body .px-3 {
+  padding-right: 16px!important;
+}
+
+.markdown-body .pl-4 {
+  padding-left: 24px!important;
+}
+
+.markdown-body .pl-5 {
+  padding-left: 32px!important;
+}
+
+.markdown-body .pl-6 {
+  padding-left: 40px!important;
+}
+
+.markdown-body .f6 {
+  font-size: 12px!important;
+}
+
+.markdown-body .lh-condensed {
+  line-height: 1.25!important;
+}
+
+.markdown-body .text-bold {
+  font-weight: 600!important;
+}
+
+.markdown-body:before {
+  content: "";
+  display: table;
+}
+
+.markdown-body:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.markdown-body>:first-child {
+  margin-top: 0!important;
+}
+
+.markdown-body>:last-child {
+  margin-bottom: 0!important;
+}
+
+.markdown-body a:not([href]) {
+  color: inherit;
+  text-decoration: none;
+}
+
+.markdown-body blockquote,
+.markdown-body dl,
+.markdown-body ol,
+.markdown-body p,
+.markdown-body pre,
+.markdown-body table,
+.markdown-body ul {
+  margin-bottom: 16px;
+  margin-top: 0;
+}
+
+.markdown-body hr {
+  background-color: #e1e4e8;
+  border: 0;
+  height: .25em;
+  margin: 24px 0;
+  padding: 0;
+}
+
+.markdown-body blockquote {
+  border-left: .25em solid #dfe2e5;
+  color: #6a737d;
+  padding: 0 1em;
+}
+
+.markdown-body blockquote>:first-child {
+  margin-top: 0;
+}
+
+.markdown-body blockquote>:last-child {
+  margin-bottom: 0;
+}
+
+.markdown-body kbd {
+  background-color: #fafbfc;
+  border: 1px solid #c6cbd1;
+  border-bottom-color: #959da5;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #959da5;
+  color: #444d56;
+  display: inline-block;
+  font-size: 11px;
+  line-height: 10px;
+  padding: 3px 5px;
+  vertical-align: middle;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  font-weight: 600;
+  line-height: 1.25;
+  margin-bottom: 16px;
+  margin-top: 24px;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+}
+
+.markdown-body h1,
+.markdown-body h2 {
+  border-bottom: 1px solid #eaecef;
+  padding-bottom: .3em;
+}
+
+.markdown-body h2 {
+  font-size: 1.5em;
+}
+
+.markdown-body h3 {
+  font-size: 1.25em;
+}
+
+.markdown-body h4 {
+  font-size: 1em;
+}
+
+.markdown-body h5 {
+  font-size: .875em;
+}
+
+.markdown-body h6 {
+  color: #6a737d;
+  font-size: .85em;
+}
+
+.markdown-body ol,
+.markdown-body ul {
+  padding-left: 2em;
+}
+
+.markdown-body ol ol,
+.markdown-body ol ul,
+.markdown-body ul ol,
+.markdown-body ul ul {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.markdown-body li {
+  word-wrap: break-all;
+}
+
+.markdown-body li>p {
+  margin-top: 16px;
+}
+
+.markdown-body li+li {
+  margin-top: .25em;
+}
+
+.markdown-body dl {
+  padding: 0;
+}
+
+.markdown-body dl dt {
+  font-size: 1em;
+  font-style: italic;
+  font-weight: 600;
+  margin-top: 16px;
+  padding: 0;
+}
+
+.markdown-body dl dd {
+  margin-bottom: 16px;
+  padding: 0 16px;
+}
+
+.markdown-body table {
+  display: block;
+  overflow: auto;
+  width: 100%;
+}
+
+.markdown-body table th {
+  font-weight: 600;
+}
+
+.markdown-body table td,
+.markdown-body table th {
+  border: 1px solid #dfe2e5;
+  padding: 6px 13px;
+}
+
+.markdown-body table tr {
+  background-color: #fff;
+  border-top: 1px solid #c6cbd1;
+}
+
+.markdown-body table tr:nth-child(2n) {
+  background-color: #f6f8fa;
+}
+
+.markdown-body img {
+  background-color: #fff;
+  box-sizing: content-box;
+  max-width: 100%;
+}
+
+.markdown-body img[align=right] {
+  padding-left: 20px;
+}
+
+.markdown-body img[align=left] {
+  padding-right: 20px;
+}
+
+.markdown-body code {
+  background-color: rgba(27,31,35,.05);
+  border-radius: 3px;
+  font-size: 85%;
+  margin: 0;
+  padding: .2em .4em;
+}
+
+.markdown-body pre {
+  word-wrap: normal;
+}
+
+.markdown-body pre>code {
+  background: transparent;
+  border: 0;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  word-break: normal;
+}
+
+.markdown-body .highlight {
+  margin-bottom: 16px;
+}
+
+.markdown-body .highlight pre {
+  margin-bottom: 0;
+  word-break: normal;
+}
+
+.markdown-body .highlight pre,
+.markdown-body pre {
+  background-color: #f6f8fa;
+  border-radius: 3px;
+  font-size: 85%;
+  line-height: 1.45;
+  overflow: auto;
+  padding: 16px;
+}
+
+.markdown-body pre code {
+  background-color: transparent;
+  border: 0;
+  display: inline;
+  line-height: inherit;
+  margin: 0;
+  max-width: auto;
+  overflow: visible;
+  padding: 0;
+  word-wrap: normal;
+}
+
+.markdown-body .commit-tease-sha {
+  color: #444d56;
+  display: inline-block;
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  font-size: 90%;
+}
+
+.markdown-body .blob-wrapper {
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.markdown-body .blob-wrapper-embedded {
+  max-height: 240px;
+  overflow-y: auto;
+}
+
+.markdown-body .blob-num {
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  color: rgba(27,31,35,.3);
+  cursor: pointer;
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  font-size: 12px;
+  line-height: 20px;
+  min-width: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: right;
+  user-select: none;
+  vertical-align: top;
+  white-space: nowrap;
+  width: 1%;
+}
+
+.markdown-body .blob-num:hover {
+  color: rgba(27,31,35,.6);
+}
+
+.markdown-body .blob-num:before {
+  content: attr(data-line-number);
+}
+
+.markdown-body .blob-code {
+  line-height: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  position: relative;
+  vertical-align: top;
+}
+
+.markdown-body .blob-code-inner {
+  color: #24292e;
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  font-size: 12px;
+  overflow: visible;
+  white-space: pre;
+  word-wrap: normal;
+}
+
+.markdown-body .pl-token.active,
+.markdown-body .pl-token:hover {
+  background: #ffea7f;
+  cursor: pointer;
+}
+
+.markdown-body kbd {
+  background-color: #fafbfc;
+  border: 1px solid #d1d5da;
+  border-bottom-color: #c6cbd1;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #c6cbd1;
+  color: #444d56;
+  display: inline-block;
+  font: 11px SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  line-height: 10px;
+  padding: 3px 5px;
+  vertical-align: middle;
+}
+
+.markdown-body :checked+.radio-label {
+  border-color: #0366d6;
+  position: relative;
+  z-index: 1;
+}
+
+.markdown-body .tab-size[data-tab-size="1"] {
+  -moz-tab-size: 1;
+  tab-size: 1;
+}
+
+.markdown-body .tab-size[data-tab-size="2"] {
+  -moz-tab-size: 2;
+  tab-size: 2;
+}
+
+.markdown-body .tab-size[data-tab-size="3"] {
+  -moz-tab-size: 3;
+  tab-size: 3;
+}
+
+.markdown-body .tab-size[data-tab-size="4"] {
+  -moz-tab-size: 4;
+  tab-size: 4;
+}
+
+.markdown-body .tab-size[data-tab-size="5"] {
+  -moz-tab-size: 5;
+  tab-size: 5;
+}
+
+.markdown-body .tab-size[data-tab-size="6"] {
+  -moz-tab-size: 6;
+  tab-size: 6;
+}
+
+.markdown-body .tab-size[data-tab-size="7"] {
+  -moz-tab-size: 7;
+  tab-size: 7;
+}
+
+.markdown-body .tab-size[data-tab-size="8"] {
+  -moz-tab-size: 8;
+  tab-size: 8;
+}
+
+.markdown-body .tab-size[data-tab-size="9"] {
+  -moz-tab-size: 9;
+  tab-size: 9;
+}
+
+.markdown-body .tab-size[data-tab-size="10"] {
+  -moz-tab-size: 10;
+  tab-size: 10;
+}
+
+.markdown-body .tab-size[data-tab-size="11"] {
+  -moz-tab-size: 11;
+  tab-size: 11;
+}
+
+.markdown-body .tab-size[data-tab-size="12"] {
+  -moz-tab-size: 12;
+  tab-size: 12;
+}
+
+.markdown-body .task-list-item {
+  list-style-type: none;
+}
+
+.markdown-body .task-list-item+.task-list-item {
+  margin-top: 3px;
+}
+
+.markdown-body .task-list-item input {
+  margin: 0 .2em .25em -1.6em;
+  vertical-align: middle;
+}
+
+.markdown-body hr {
+  border-bottom-color: #eee;
+}
+
+.markdown-body .pl-0 {
+  padding-left: 0!important;
+}
+
+.markdown-body .pl-1 {
+  padding-left: 4px!important;
+}
+
+.markdown-body .pl-2 {
+  padding-left: 8px!important;
+}
+
+.markdown-body .pl-3 {
+  padding-left: 16px!important;
+}
+
+.markdown-body .pl-4 {
+  padding-left: 24px!important;
+}
+
+.markdown-body .pl-5 {
+  padding-left: 32px!important;
+}
+
+.markdown-body .pl-6 {
+  padding-left: 40px!important;
+}
+
+.markdown-body .pl-7 {
+  padding-left: 48px!important;
+}
+
+.markdown-body .pl-8 {
+  padding-left: 64px!important;
+}
+
+.markdown-body .pl-9 {
+  padding-left: 80px!important;
+}
+
+.markdown-body .pl-10 {
+  padding-left: 96px!important;
+}
+
+.markdown-body .pl-11 {
+  padding-left: 112px!important;
+}
+
+.markdown-body .pl-12 {
+  padding-left: 128px!important;
+}
+
+/*# sourceURL=webpack://./node_modules/github-markdown-css/github-markdown.css */
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL25vZGVfbW9kdWxlcy9naXRodWItbWFya2Rvd24tY3NzL2dpdGh1Yi1tYXJrZG93bi5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSwwQkFBMEI7RUFDMUIsMkRBQXF0RTtBQUN2dEU7O0FBRUE7RUFDRSxxQkFBcUI7RUFDckIsa0JBQWtCO0VBQ2xCLDJCQUEyQjtBQUM3Qjs7QUFFQTtFQUNFLFdBQVc7RUFDWCxjQUFjO0VBQ2Qsa0JBQWtCO0VBQ2xCLGtCQUFrQjtBQUNwQjs7QUFFQTtFQUNFLGFBQWE7QUFDZjs7QUFFQTs7Ozs7O0VBTUUsY0FBYztFQUNkLHNCQUFzQjtFQUN0QixrQkFBa0I7QUFDcEI7O0FBRUE7Ozs7OztFQU1FLHFCQUFxQjtBQUN2Qjs7QUFFQTs7Ozs7O0VBTUUsbUJBQW1CO0FBQ3JCOztBQUVBO0VBQ0UsMEJBQTBCO0VBQzFCLDhCQUE4QjtFQUM5QixjQUFjO0VBQ2QsZ0JBQWdCO0VBQ2hCLGtJQUFrSTtFQUNsSSxlQUFlO0VBQ2YsZ0JBQWdCO0VBQ2hCLHFCQUFxQjtBQUN2Qjs7QUFFQTtFQUNFLGNBQWM7QUFDaEI7O0FBRUE7O0VBRUUsY0FBYztBQUNoQjs7QUFFQTs7RUFFRSxjQUFjO0FBQ2hCOztBQUVBOztFQUVFLGNBQWM7QUFDaEI7O0FBRUE7RUFDRSxjQUFjO0FBQ2hCOztBQUVBO0VBQ0UsY0FBYztBQUNoQjs7QUFFQTs7Ozs7OztFQU9FLGNBQWM7QUFDaEI7O0FBRUE7O0VBRUUsY0FBYztBQUNoQjs7QUFFQTtFQUNFLGNBQWM7QUFDaEI7O0FBRUE7RUFDRSx5QkFBeUI7RUFDekIsY0FBYztBQUNoQjs7QUFFQTtFQUNFLHlCQUF5QjtFQUN6QixjQUFjO0FBQ2hCOztBQUVBO0VBQ0UsYUFBYTtBQUNmOztBQUVBO0VBQ0UsY0FBYztFQUNkLGdCQUFnQjtBQUNsQjs7QUFFQTtFQUNFLGNBQWM7QUFDaEI7O0FBRUE7OztFQUdFLGNBQWM7RUFDZCxnQkFBZ0I7QUFDbEI7O0FBRUE7RUFD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 */
+  </style>
+  <style>
+  /**
+ * prism.js default theme for JavaScript, CSS and HTML
+ * Based on dabblet (http://dabblet.com)
+ * @author Lea Verou
+ */
+
+code[class*="language-"],
+pre[class*="language-"] {
+	color: black;
+	background: none;
+	text-shadow: 0 1px white;
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	font-size: 1em;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
+code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
+	text-shadow: none;
+	background: #b3d4fc;
+}
+
+pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
+code[class*="language-"]::selection, code[class*="language-"] ::selection {
+	text-shadow: none;
+	background: #b3d4fc;
+}
+
+@media print {
+	code[class*="language-"],
+	pre[class*="language-"] {
+		text-shadow: none;
+	}
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: #f5f2f0;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
+	border-radius: .3em;
+	white-space: normal;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: slategray;
+}
+
+.token.punctuation {
+	color: #999;
+}
+
+.token.namespace {
+	opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol,
+.token.deleted {
+	color: #905;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+	color: #690;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+	color: #9a6e3a;
+	/* This background color was intended by the author of this theme. */
+	background: hsla(0, 0%, 100%, .5);
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+	color: #07a;
+}
+
+.token.function,
+.token.class-name {
+	color: #DD4A68;
+}
+
+.token.regex,
+.token.important,
+.token.variable {
+	color: #e90;
+}
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}
+
+/*# sourceURL=webpack://./node_modules/prismjs/themes/prism.css */
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL25vZGVfbW9kdWxlcy9wcmlzbWpzL3RoZW1lcy9wcmlzbS5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7Ozs7RUFJRTs7QUFFRjs7Q0FFQyxZQUFZO0NBQ1osZ0JBQWdCO0NBQ2hCLHdCQUF3QjtDQUN4QixzRUFBc0U7Q0FDdEUsY0FBYztDQUNkLGdCQUFnQjtDQUNoQixnQkFBZ0I7Q0FDaEIsb0JBQW9CO0NBQ3BCLGtCQUFrQjtDQUNsQixpQkFBaUI7Q0FDakIsZ0JBQWdCOztDQUVoQixnQkFBZ0I7Q0FDaEIsY0FBYztDQUNkLFdBQVc7O0NBRVgscUJBQXFCO0NBQ3JCLGtCQUFrQjtDQUNsQixpQkFBaUI7Q0FDakIsYUFBYTtBQUNkOztBQUVBOztDQUVDLGlCQUFpQjtDQUNqQixtQkFBbUI7QUFDcEI7O0FBRUE7O0NBRUMsaUJBQWlCO0NBQ2pCLG1CQUFtQjtBQUNwQjs7QUFFQTtDQUNDOztFQUVDLGlCQUFpQjtDQUNsQjtBQUNEOztBQUVBLGdCQUFnQjtBQUNoQjtDQUNDLFlBQVk7Q0FDWixjQUFjO0NBQ2QsY0FBYztBQUNmOztBQUVBOztDQUVDLG1CQUFtQjtBQUNwQjs7QUFFQSxnQkFBZ0I7QUFDaEI7Q0FDQyxhQUFhO0NBQ2IsbUJBQW1CO0NBQ25CLG1CQUFtQjtBQUNwQjs7QUFFQTs7OztDQUlDLGdCQUFnQjtBQUNqQjs7QUFFQTtDQUNDLFdBQVc7QUFDWjs7QUFFQTtDQUNDLFdBQVc7QUFDWjs7QUFFQTs7Ozs7OztDQU9DLFdBQVc7QUFDWjs7QUFFQTs7Ozs7O0NBTUMsV0FBVztBQUNaOztBQUVBOzs7OztDQUtDLGNBQWM7Q0FDZCxvRUFBb0U7Q0FDcEUsaUNBQWlDO0FBQ2xDOztBQUVBOzs7Q0FHQyxXQUFXO0FBQ1o7O0FBRUE7O0NBRUMsY0FBYztBQUNmOztBQUVBOzs7Q0FHQyxXQUFXO0FBQ1o7O0FBRUE7O0NBRUMsaUJBQWlCO0FBQ2xCO0FBQ0E7Q0FDQyxrQkFBa0I7QUFDbkI7O0FBRUE7Q0FDQyxZQUFZO0FBQ2IiLCJzb3VyY2VSb290IjoiIn0= */
+  </style>
+  <style>
+  
+  </style>
+  <style>
+    .markdown-body {
+      font-family: -apple-system,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
+      box-sizing: border-box;
+      min-width: 200px;
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 45px;
+    }
+
+    @media not print {
+      .markdown-body {
+        padding: 45px;
+      }
+
+      @media (max-width: 767px) {
+        .markdown-body {
+          padding: 15px;
+        }
+      }
+    }
+
+    .hf-container {
+      color: #24292e;
+      line-height: 1.3;
+    }
+
+    .markdown-body .highlight pre,
+    .markdown-body pre {
+      white-space: pre-wrap;
+    }
+    .markdown-body table {
+      display: table;
+    }
+    .markdown-body img[data-align="center"] {
+      display: block;
+      margin: 0 auto;
+    }
+    .markdown-body img[data-align="right"] {
+      display: block;
+      margin: 0 0 0 auto;
+    }
+    .markdown-body li.task-list-item {
+      list-style-type: none;
+    }
+    .markdown-body li > [type=checkbox] {
+      margin: 0 0 0 -1.3em;
+    }
+    .markdown-body input[type="checkbox"] ~ p {
+      margin-top: 0;
+      display: inline-block;
+    }
+    .markdown-body ol ol,
+    .markdown-body ul ol {
+      list-style-type: decimal;
+    }
+    .markdown-body ol ol ol,
+    .markdown-body ol ul ol,
+    .markdown-body ul ol ol,
+    .markdown-body ul ul ol {
+      list-style-type: decimal;
+    }
+  </style>
+  <style>.markdown-body a.footnote-ref {
+  text-decoration: none;
+}
+
+.footnotes {
+  font-size: .85em;
+  opacity: .8;
+}
+
+.footnotes li[role="doc-endnote"] {
+  position: relative;
+}
+
+.footnotes .footnote-back {
+  position: absolute;
+  font-family: initial;
+  top: .2em;
+  right: 1em;
+  text-decoration: none;
+}
+
+.inline-math.invalid,
+.multiple-math.invalid {
+  color: rgb(255, 105, 105);
+}
+
+.toc-container {
+  width: 100%;
+}
+
+.toc-container .toc-title {
+  font-weight: 700;
+  font-size: 1.2em;
+  margin-bottom: 0;
+}
+
+.toc-container li,
+.toc-container ul,
+.toc-container ul li {
+  list-style: none !important;
+}
+
+.toc-container > ul {
+  padding-left: 0;
+}
+
+.toc-container ul li span {
+  display : flex;
+}
+
+.toc-container ul li span a {
+  color: inherit;
+  text-decoration: none;
+}
+.toc-container ul li span a:hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+.toc-container ul li span span.dots {
+  flex: 1;
+  height: 0.65em;
+  margin: 0 10px;
+  border-bottom: 2px dotted black;
+}
+
+/*# sourceURL=webpack://./src/muya/lib/assets/styles/exportStyle.css */
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9tdXlhL2xpYi9hc3NldHMvc3R5bGVzL2V4cG9ydFN0eWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLHFCQUFxQjtBQUN2Qjs7QUFFQTtFQUNFLGdCQUFnQjtFQUNoQixXQUFXO0FBQ2I7O0FBRUE7RUFDRSxrQkFBa0I7QUFDcEI7O0FBRUE7RUFDRSxrQkFBa0I7RUFDbEIsb0JBQW9CO0VBQ3BCLFNBQVM7RUFDVCxVQUFVO0VBQ1YscUJBQXFCO0FBQ3ZCOztBQUVBOztFQUVFLHlCQUF5QjtBQUMzQjs7QUFFQTtFQUNFLFdBQVc7QUFDYjs7QUFFQTtFQUNFLGdCQUFnQjtFQUNoQixnQkFBZ0I7RUFDaEIsZ0JBQWdCO0FBQ2xCOztBQUVBOzs7RUFHRSwyQkFBMkI7QUFDN0I7O0FBRUE7RUFDRSxlQUFlO0FBQ2pCOztBQUVBO0VBQ0UsY0FBYztBQUNoQjs7QUFFQTtFQUNFLGNBQWM7RUFDZCxxQkFBcUI7QUFDdkI7QUFDQTtFQUNFLGNBQWM7RUFDZCxxQkFBcUI7QUFDdkI7O0FBRUE7RUFDRSxPQUFPO0VBQ1AsY0FBYztFQUNkLGNBQWM7RUFDZCwrQkFBK0I7QUFDakMiLCJzb3VyY2VSb290IjoiIn0= */</style>
+  <style>.markdown-body{}pre.front-matter{display:none!important;}/** Academic **/
+
+/* DejaVu Serif should use 11pt */
+.hf-container,
+.markdown-body {
+  font-family: Georgia,Palatino,"Palatino Linotype","Times New Roman","DejaVu Serif",serif,"Apple Color Emoji","Segoe UI Emoji";
+  font-size: 12pt;
+  line-height: 1.3;
+  color: #212121;
+}
+
+:root {
+  --footerHeaderBorderColor: #1c1c1c;
+}
+.hf-container {
+  font-size: 0.75em;
+}
+.page-header:not(.simple) .hf-container {
+  padding-bottom: 2px;
+  border-bottom: 1px solid var(--footerHeaderBorderColor);
+}
+.page-footer:not(.simple) .hf-container {
+  padding-top: 2px;
+  border-top: 1px solid var(--footerHeaderBorderColor);
+}
+
+.footnotes {
+  font-size: 0.75em;
+  opacity: 0.9;
+}
+.footnotes > hr:first-of-type {
+  width: 250px;
+  height: 1px;
+  background: var(--footerHeaderBorderColor);
+}
+.footnotes > ol > li > p {
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  font-weight: 600;
+  color: #282828;
+}
+
+.markdown-body h1 {
+  font-size: 1.8em;
+}
+.markdown-body h2 {
+  font-size: 1.6em;
+}
+.markdown-body h3 {
+  font-size: 1.4em;
+}
+.markdown-body h4,
+.markdown-body h5 {
+  font-size: 1.2em;
+}
+.markdown-body h6 {
+  font-size: 1em;
+}
+
+.markdown-body h1,
+.markdown-body h2 {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.markdown-body a {
+  color: #212121;
+  text-decoration: underline;
+}
+
+.markdown-body hr {
+  background-color: #b0b0b0;
+  height: 1px;
+}
+
+.markdown-body blockquote {
+  border: none;
+  color: #282828;
+  padding: 0 1em;
+  margin-left: 20px;
+}
+
+.markdown-body .highlight pre,
+.markdown-body pre {
+  background-color: #f6f8fa;
+  border: 1px solid #e5e5e5;
+  border-radius: 0;
+}
+
+.markdown-body table td,
+.markdown-body table th {
+  border: 1px solid #1a1a1a;
+  padding: 2px 6px;
+}
+.markdown-body table tr {
+  background: none;
+  border-top: 1px solid #1a1a1a;
+  text-align: left;
+}
+.markdown-body table tr:nth-child(2n) {
+  background: none;
+}
+
+/*# sourceURL=webpack://./src/renderer/assets/themes/export/academic.theme.css */
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9yZW5kZXJlci9hc3NldHMvdGhlbWVzL2V4cG9ydC9hY2FkZW1pYy50aGVtZS5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsZUFBZTs7QUFFZixpQ0FBaUM7QUFDakM7O0VBRUUsNkhBQTZIO0VBQzdILGVBQWU7RUFDZixnQkFBZ0I7RUFDaEIsY0FBYztBQUNoQjs7QUFFQTtFQUNFLGtDQUFrQztBQUNwQztBQUNBO0VBQ0UsaUJBQWlCO0FBQ25CO0FBQ0E7RUFDRSxtQkFBbUI7RUFDbkIsdURBQXVEO0FBQ3pEO0FBQ0E7RUFDRSxnQkFBZ0I7RUFDaEIsb0RBQW9EO0FBQ3REOztBQUVBO0VBQ0UsaUJBQWlCO0VBQ2pCLFlBQVk7QUFDZDtBQUNBO0VBQ0UsWUFBWTtFQUNaLFdBQVc7RUFDWCwwQ0FBMEM7QUFDNUM7QUFDQTtFQUNFLGVBQWU7RUFDZixrQkFBa0I7QUFDcEI7O0FBRUE7Ozs7OztFQU1FLGdCQUFnQjtFQUNoQixjQUFjO0FBQ2hCOztBQUVBO0VBQ0UsZ0JBQWdCO0FBQ2xCO0FBQ0E7RUFDRSxnQkFBZ0I7QUFDbEI7QUFDQTtFQUNFLGdCQUFnQjtBQUNsQjtBQUNBOztFQUVFLGdCQUFnQjtBQUNsQjtBQUNBO0VBQ0UsY0FBYztBQUNoQjs7QUFFQTs7RUFFRSxtQkFBbUI7RUFDbkIsaUJBQWlCO0FBQ25COztBQUVBO0VBQ0UsY0FBYztFQUNkLDBCQUEwQjtBQUM1Qjs7QUFFQTtFQUNFLHlCQUF5QjtFQUN6QixXQUFXO0FBQ2I7O0FBRUE7RUFDRSxZQUFZO0VBQ1osY0FBYztFQUNkLGNBQWM7RUFDZCxpQkFBaUI7QUFDbkI7O0FBRUE7O0VBRUUseUJBQXlCO0VBQ3pCLHlCQUF5QjtFQUN6QixnQkFBZ0I7QUFDbEI7O0FBRUE7O0VBRUUseUJBQXlCO0VBQ3pCLGdCQUFnQjtBQUNsQjtBQUNBO0VBQ0UsZ0JBQWdCO0VBQ2hCLDZCQUE2QjtFQUM3QixnQkFBZ0I7QUFDbEI7QUFDQTtFQUNFLGdCQUFnQjtBQUNsQiIsInNvdXJjZVJvb3QiOiIifQ== */</style>
+</head>
+<body>
+  <article class="markdown-body"><h2 class="atx" id="标准功能">标准功能</h2>
+<table>
+<thead>
+<tr>
+<th>序号</th>
+<th>设备采集及控制功能</th>
+<th></th>
+<th>设备信息</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td><a href="#functionOne">设备模式监控功能</a></td>
+<td>下发</td>
+<td>所有设备</td>
+<td>设备支持离线、在线模式；离线指 IoT 系统不能控制设备，但是都可以抓取数据。</td>
+</tr>
+<tr>
+<td>2</td>
+<td><a href="#functionTwo">设备联网状态监控功能</a></td>
+<td>数采</td>
+<td>所有设备</td>
+<td>设备及 IoT 都需要各自监控联网状态。</td>
+</tr>
+<tr>
+<td>3</td>
+<td><a href="#functionThree">IoT 联网状态监控功能</a></td>
+<td>数采</td>
+<td>所有设备</td>
+<td>设备及 IoT 都需要各自监控联网状态。</td>
+</tr>
+<tr>
+<td>4</td>
+<td><a href="#functionFour">设备状态监控功能</a></td>
+<td>数采</td>
+<td>所有设备</td>
+<td>设备状态一般包括运行、待机、故障、停止、保养等状态。</td>
+</tr>
+<tr>
+<td>5</td>
+<td><a href="#functionFive">设备警报报告功能</a></td>
+<td>数采</td>
+<td>所有设备</td>
+<td>设备报警的信息采集。</td>
+</tr>
+<tr>
+<td>6</td>
+<td><a href="#functionSix">远程信息下发功能</a></td>
+<td>下发</td>
+<td>所有设备</td>
+<td>IoT 系统下发信息给设备。</td>
+</tr>
+<tr>
+<td>7</td>
+<td><a href="#functionSeven">远程时间同步功能</a></td>
+<td>下发</td>
+<td>所有设备</td>
+<td>IoT 同步设备的日期和时间。</td>
+</tr>
+<tr>
+<td>8</td>
+<td><a href="#functionEight">设备生产数据上报</a></td>
+<td>数采</td>
+<td>所有设备</td>
+<td>设备生产过程中的实时生产数据。</td>
+</tr>
+</tbody></table>
+<h3 class="atx" id="lessspan-iddouble-quotefunctiononedouble-quotegreater设备模式监控功能lessspangreater"><a href="#%E6%A0%87%E5%87%86%E5%8A%9F%E8%83%BD"><span id="functionOne">设备模式监控功能</span></a></h3>
+<p><em>在人员按了 Local 按钮的一瞬间，且当前设备模式为 Remote 模式，就将模式切换为 Local 模式；反之，在人员按了 Remote 按钮的一瞬间，且当前设备模式为 Local 模式，就将模式切换为 Remote 模式。</em></p>
+<blockquote>
+<p>Local：<strong><code>L264（开关功能）</code> = <code>ZR112为 0（当前设备模式显示）</code> = <code>L270（指示灯功能）</code></strong><br>Remote：<strong><code>L262（开关功能）</code> = <code>ZR112为 1（当前设备模式显示）</code> = <code>L271（指示灯功能）</code></strong></p>
+</blockquote>
+<p><code>L262</code>、<code>L264</code>为人机上交互的按钮。</p>
+<ul>
+<li><code>L262</code>为 Remote 按钮，用于切换设备模式为<strong>在线模式</strong>；</li>
+<li><code>L264</code>为 Local 按钮，用于切换设备模式为<strong>离线模式</strong>。
+<code>ZR112</code>为人机上显示当前设备模式的点位。按照<code>设备交互文档</code>中所说，<strong><code>1表示在线，0表示离线</code></strong>。所以我们需要将人机上这一点位作出以下修改：</li>
+</ul>
+<ol>
+<li>STEP 1: 点击右上角编辑页首，双击 CIM Mode 下<code>Remote</code>显示其属性。
+<img alt="" src="images/Pastedimage20230828161615.png"></li>
+</ol>
+<ul>
+<li>点击<code>显示</code>,<code>状态0</code>时的<code>登录讯息</code>修改为<code>Local</code>；<code>状态1</code>时的<code>登录讯息</code>修改为<code>Remote</code>。
+<img alt="" src="images/Pastedimage20230828161725.png">
+<img alt="" src="images/Pastedimage20230828162059.png"></li>
+</ul>
+<ol start="2">
+<li>STEP 2: 点击<code>颜色</code>，修改<code>状态1</code>的<code>底板颜色</code>为<code>29</code>；修改<code>状态0</code>的<code>底板颜色</code>为<code>6</code>。
+<img alt="" src="images/Pastedimage20230828162747.png">
+<img alt="" src="images/Pastedimage20230828163001.png"></li>
+<li>STEP 3: 最后点击<code>确定</code>完成此次修改。</li>
+</ol>
+<hr>
+<p><code>L262</code>、<code>L264</code>为<strong>开关功能</strong>的点位，随着人员的点按而 ON/OFF，而切换到 Remote 模式时，<strong>指示灯功能</strong>的点位会常 ON，表示当前模式为 Remote 模式。Local 模式也一样。所以需要将 Local 模式和 Remote 模式的<strong>指示灯功能</strong>分别修改为<code>L270</code>和<code>L271</code>。
+<img alt="" src="images/Pastedimage20230828164148.png"></p>
+<h3 class="atx" id="lessspan-iddouble-quotefunctiontwodouble-quotegreater设备联网状态监控功能lessspangreater"><a href="#%E6%A0%87%E5%87%86%E5%8A%9F%E8%83%BD"><span id="functionTwo">设备联网状态监控功能</span></a></h3>
+<p><em>IoT 监控设备上<code>ZR3005</code>的值是否持续一秒加 1，若未能监测到，则表示设备断网。<code>ZR3005</code>的值达到 65535 后会被置 0，然后重新开始一秒加 1。</em></p>
+<h3 class="atx" id="lessspan-iddouble-quotefunctionthreedouble-quotegreateriot-联网状态监控功能lessspangreater"><a href="#%E6%A0%87%E5%87%86%E5%8A%9F%E8%83%BD"><span id="functionThree">IOT 联网状态监控功能</span></a></h3>
+<p><em>IOT 联网时，每秒加 1 写入<code>ZR3010</code>,Remote 模式下实时将<code>ZR3010</code>的值与之前写入的值进行比较，若 9 秒内仍未发生变化，设备判断 IOT 断网，发出警报并蜂鸣。警报点位一般为<code>L2021</code>。</em></p>
+<blockquote>
+<p>之前写入的值为<code>D0</code>的值。</p>
+</blockquote>
+<p>IOT 断网警报不会影响机台继续生产，且可以通过按下机台上的重置按钮来消除警报及蜂鸣。<code>L4097</code>就是 I/O 点位置换后的重置点位，对应了机台上的重置按钮。</p>
+<blockquote>
+<p><strong>I/O 点位置换</strong> <img alt="" src="images/Pastedimage20230829081422.png">
+将<code>X200</code>到<code>X23F</code>置换为<code>L4096</code>到<code>L4159</code>  </p>
+<p><img alt="" src="images/Pastedimage20230829090155.png"> </p>
+<p> <img alt="" src="images/Pastedimage20230829090231.png"></p>
+</blockquote>
+<blockquote>
+<p><strong><code>K4X200</code></strong>
+这是三菱的组合位元件，三菱系列的 PLC 可以这种位元件组的形势接收或发送二进制数据，一个位元件组（<code>K1X200</code>）由 4 个连续的 bit 组成。</p>
+<p><code>KnMm</code>格式的数据意思是从<code>Mm</code>开始的<code>n*4</code>位所组成的数据，n 可以为 1，2，3，4，形式可以是<code>KnMm</code>，<code>KnXm</code>，<code>KnYm</code>。</p>
+<hr>
+<p>举个 🌰
+<code>K2X0</code>——从<code>X0</code>开始的<code>2*4</code>位所组成的数据，也就是<code>X7</code>、<code>X6</code>、<code>X5</code>、<code>X4</code>、<code>X3</code>、<code>X2</code>、<code>X1</code>、<code>X0</code>这 8 位所组成的数据。
+<code>K1M10</code>——从<code>M10</code>开始的<code>1*4</code>位所组成的数据，也就是<code>M3</code>、<code>M2</code>、<code>M1</code>、<code>M0</code>这 4 位所组成的数据。</p>
+</blockquote>
+<h3 class="atx" id="lessspan-iddouble-quotefunctionfourdouble-quotegreater设备状态监控功能lessspangreater"><a href="#%E6%A0%87%E5%87%86%E5%8A%9F%E8%83%BD"><span id="functionFour">设备状态监控功能</span></a></h3>
+<p><em>设备状态共五种，详情见下表：</em></p>
+<table>
+<thead>
+<tr>
+<th align="center">运行</th>
+<th align="center">故障</th>
+<th align="center">闲置</th>
+<th align="center">停机</th>
+<th align="center">保养</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">原点复归并启动</td>
+<td align="center">出现异常并停机</td>
+<td align="center">启动后流片间隔</td>
+<td align="center">无原点复归，无启动</td>
+<td align="center">原点复归，无启动</td>
+</tr>
+<tr>
+<td align="center"><code>ZR120 = 0</code></td>
+<td align="center"><code>ZR120 = 1</code></td>
+<td align="center"><code>ZR120 = 2</code></td>
+<td align="center"><code>ZR120 = 3</code></td>
+<td align="center"><code>ZR120 = 4</code></td>
+</tr>
+</tbody></table>
+<blockquote>
+<p><code>ZR120</code>为人机上点位
+<img alt="" src="images/Pastedimage20230829131734.png"></p>
+</blockquote>
+<h3 class="atx" id="lessspan-iddouble-quotefunctionfivedouble-quotegreater设备警报报告功能lessspangreater"><a href="#%E6%A0%87%E5%87%86%E5%8A%9F%E8%83%BD"><span id="functionFive">设备警报报告功能</span></a></h3>
+<p><em>与上面提到的<strong>I/O 点位置换</strong>同理，将<code>L2000</code>到<code>L2639</code>的警报实时传送到<code>ZR3700</code>到<code>ZR3739</code>，共计 40 word（即 640 bit）。</em></p>
+<h3 class="atx" id="lessspan-iddouble-quotefunctionsixdouble-quotegreater远程信息下发功能lessspangreater"><a href="#%E6%A0%87%E5%87%86%E5%8A%9F%E8%83%BD"><span id="functionSix">远程信息下发功能</span></a></h3>
+<p><em>通过索引触发远程下发信息在人机上的显示、蜂鸣器及三色灯，内容可支持显示 128 个 ASCII 字符。同时，若 IOT 下发的消息类型是<strong>间隔消息</strong>，需要提供<strong>间隔秒数</strong>；若 IOT 下发的消息类型是<strong>持续消息</strong>，则蜂鸣器会长鸣。两个消息类型都可由人员手动解除。</em></p>
+<ul>
+<li><code>ZR60005</code>为人机上点位，用于显示信息的内容</li>
+<li><code>ZR2029.1</code>为人机上点位【Confirm】，用于手动确认信息已收到，可解除信息的显示、蜂鸣器及三色灯。</li>
+</ul>
+<hr>
+<p><code>ZR3837</code>为 IOT 下发的索引，若当前索引与上一次索引（即<code>ZR3838</code>）不同，则会触发信息框的显示。</p>
+<img width="690" alt="Pastedimage20230830173755.png" title="" src="./images/e4c7c31128697f0c885bd3fb17aca71e5c125eed.png">
+
+<p>CIM Message 信息框的画面编号为 5，所以视窗画面<code>D2517</code>的值为 5。</p>
+<p><img alt="Pastedimage20230830174158.png" src="./images/b1e35a18ce263622545a4d3ad47b93add1bab6ae.png"></p>
+<p>视窗显示位置的<code>D2518</code>、<code>D2519</code>为 CIM Message 信息框显示的 X、Y 坐标。</p>
+<p><img alt="Pastedimage20230831084957.png" src="./images/48f2bc69ffdd06778f0dd13670c5c3575aab74c9.png"><br>在人员手动按下【Confirm】按钮后（即<code>ZR2029.1</code>这一软元件位 ON 了之后），将上面的视窗控制、视窗画面和视窗显示位置均清零，同时清空信息内容与消息类型，便可达到人员手动可解除信息显示、蜂鸣器及三色灯的效果。</p>
+<blockquote>
+<p>由于三色灯及蜂鸣器是根据消息类型触发，所以一旦消息类型被清空，三色灯及蜂鸣器也会随之解除。
+增加 IOT 对消息的间隔秒数（即<code>ZR3836</code>）设置
+<img alt="" src="./images/41841c61bb2ee4063e5cb8b82b1fe9d82ccec1e3.png">
+之后将<code>B1501 T95</code>、<code>B1502</code>并联到蜂鸣器及三色灯的输入条件中即可。</p>
+</blockquote>
+<h3 class="atx" id="lessspan-iddouble-quotefunctionsevendouble-quotegreater远程时间同步功能lessspangreater"><a href="#%E6%A0%87%E5%87%86%E5%8A%9F%E8%83%BD"><span id="functionSeven">远程时间同步功能</span></a></h3>
+<p><em>通过比对当前索引值与上一次索引值，比对结果为不一致时触发时间同步功能。从<code>ZR4290</code>到<code>ZR4296</code>共 7 个点位，<strong>依次为：年、月、日、时、分、秒、星期</strong>，增加范围控制（如<strong>分</strong>、<strong>秒</strong>只可为 0 至 59，<strong>时</strong>只可为 0 到 23 等）。</em></p>
+<blockquote>
+<p><strong>需要同步为<code>ZR4290</code>到<code>ZR4296</code>指定的时间日期，并显示到<code>SD210</code>到<code>SD216</code></strong></p>
+</blockquote>
+<blockquote>
+<p>对于<strong>星期（即<code>ZR4296</code>）</strong>，0：星期日，1 到 6：星期一到星期六</p>
+</blockquote>
+<p><code>DATEWR</code>是时间的写入，并<strong>不会</strong>随着实际时间而一秒一秒的改变显示的时间。  </p>
+<p><img alt="" src="./images/165fe19ca8e87ee696064a3e21bc11e5ddd1c75f.png">  </p>
+<p>它写入到<code>DATERD</code>后的点位（如<code>SD210</code>），而<code>DATERD</code>后的点位才会与实际时间一样改变。  </p>
+<p><img alt="" src="./images/28ecfc93fa2f7b62965b7eccf348a1e43b6b19ee.png"></p>
+<h3 class="atx" id="lessspan-iddouble-quotefunctioneightdouble-quotegreater设备生产数据上报lessspangreater"><a href="#%E6%A0%87%E5%87%86%E5%8A%9F%E8%83%BD"><span id="functionEight">设备生产数据上报</span></a></h3>
+<p><em>此功能只需要提供点位供 IOT 采集数据，无需 PLC 程序的编写，故不作解释。</em></p>
+<h2 class="atx" id="放板机">放板机</h2>
+<table>
+<thead>
+<tr>
+<th>序号</th>
+<th>设备采集及控制功能</th>
+<th>设备信息</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>9</td>
+<td><a href="#functionNine">设备启停控制</a></td>
+<td>所有设备</td>
+<td>上板机能接收 IoT 下发的停机/开机指令。</td>
+</tr>
+<tr>
+<td>10</td>
+<td><a href="#functionTen">是否存在载具信号</a></td>
+<td>所有设备</td>
+<td>上板机中没有载具的时候，需产生空料信号。</td>
+</tr>
+<tr>
+<td>11</td>
+<td><a href="#functionEleven">采集 Cassette ID</a></td>
+<td>所有设备</td>
+<td>上板机扫描 cassette ID 时，需将 cassette ID 信息上传，如果扫描不成功需要报警。</td>
+</tr>
+<tr>
+<td>12</td>
+<td><a href="#functionTwelveAndThirteen">切换生产信息</a></td>
+<td>所有设备</td>
+<td>上板机在收到 IoT 下发的新 cassette 信息时，设备然后 cassette 投入数量清零，并重新计数</td>
+</tr>
+<tr>
+<td>13</td>
+<td><a href="#functionTwelveAndThirteen">生产信息切换完成指令</a></td>
+<td>所有设备</td>
+<td>当设备切换生产信息完成时上报给 IOT。</td>
+</tr>
+<tr>
+<td>14</td>
+<td><a href="#functionFourteenPcbIn">设备投入 Panel 信号</a></td>
+<td>所有设备</td>
+<td>设备投入 Panel 信号</td>
+</tr>
+<tr>
+<td>15</td>
+<td><a href="#functionFifteenPcbIn">设备产出 Panel 信号</a></td>
+<td>所有设备</td>
+<td>设备产出 Panel 信号</td>
+</tr>
+<tr>
+<td>16</td>
+<td><a href="#functionSixteen">删除待生产虚拟 Panel 信息指令</a></td>
+<td>所有设备</td>
+<td>删除待生产虚拟 Panel 信息指令</td>
+</tr>
+<tr>
+<td>17</td>
+<td><a href="#functionSeventeen">控制取放板</a></td>
+<td>所有设备</td>
+<td>上板机能接收 IoT 下发的投板信号。（0：不投板，1：投板）</td>
+</tr>
+<tr>
+<td>18</td>
+<td><a href="#functionEighteen">镭雕请求条码</a></td>
+<td>所有设备</td>
+<td>上板机检测到板子到达镭雕位置时，触发向上“请求条码”。（镭雕打码）</td>
+</tr>
+</tbody></table>
+<h3 class="atx" id="lessspan-iddouble-quotefunctionninedouble-quotegreater设备启停控制lessspangreater"><span id="functionNine">设备启停控制</span></h3>
+<p><a href="#%E6%94%BE%E6%9D%BF%E6%9C%BA">返回放板机</a>/<a href="#%E4%B8%AD%E9%97%B4%E6%AE%B5">返回中间段</a>/<a href="#%E6%94%B6%E6%9D%BF%E6%9C%BA">返回收板机</a></p>
+<p><em>由 IOT 触发设备的启动与停止。需要注意的是：<strong>厂内威家骅设备在启动前都需要进行原点复归</strong>。</em></p>
+<blockquote>
+<p>原点复归</p>
+<img width="695" alt="Pastedimage20230831112525.png" title="" src="./images/aea1d5a8c013c575bbf9d8853e40b6202c6c573a.png">
+</blockquote>
+<ul>
+<li><p>IOT 请求启动设备 ➡️ 人员确认设备原点复归完成 ➡️<code>B451</code>被设置为 ON➡️<code>L256</code>被设置为 ON➡️ 启动后将<code>L256</code>设置为 OFF</p>
+</li>
+<li><p>IOT 请求停止设备 ➡️<code>B450</code>被设置为 ON➡️<code>L257</code>被设置为 ON➡️ 停止后将<code>L257</code>设置为 OFF</p>
+<blockquote>
+<p><code>L256</code>为人机上启动按钮；
+<code>L257</code>为人机上停止按钮。</p>
+</blockquote>
+</li>
+</ul>
+<p>设备完成启动或停止的动作，经过 2s 延迟之后将回复代码（<code>ZR30020.0</code>）设置为 1；
+若没有完成启动或停止的动作，则经过 2s 延迟之后将回复代码（<code>ZR30020.0</code>）设置为 0。
+回复代码（<code>ZR30020.0</code>）之后，将交握回复设置为 ON，同时将<code>B450</code>和<code>B451</code>恢复到 OFF 状态。</p>
+<h3 class="atx" id="lessspan-iddouble-quotefunctiontendouble-quotegreater是否存在载具信号lessspangreater"><span id="functionTen">是否存在载具信号</span></h3>
+<p><a href="#%E6%94%BE%E6%9D%BF%E6%9C%BA">返回放板机</a>/<a href="#%E4%B8%AD%E9%97%B4%E6%AE%B5">返回中间段</a>/<a href="#%E6%94%B6%E6%9D%BF%E6%9C%BA">返回收板机</a></p>
+<p><em>机台工作位上一般都会有检测是否存在载具的感应器。</em>
+<em>感应器 ON 则表示存在载具；感应器 OFF 则表示不存在载具。</em></p>
+<p>有些程序中会将感应器输出到<code>ZR2025.5</code>这个点位（可能是为了规范性吧），如果有<code>ZR2025.5</code>这一点位，直接用这个点位就好。如果没有，也可以选择直接用感应器。</p>
+<hr>
+<ul>
+<li><p>感应器判断无载具时，会将<code>ZR39900</code>置<code>0</code>，同时将<code>D7230</code>(不存在载具)置<code>1</code>，0.2s 延迟之后将索引值<code>ZR41405</code>改变。</p>
+</li>
+<li><p>感应器判断有载具时，会将<code>ZR39900</code>置<code>1</code>，同时将<code>D7231</code>(存在载具)置<code>1</code>，0.2s 延迟之后将索引值<code>R41405</code>改变。</p>
+<blockquote>
+<p>IOT 采集是<strong>否存在载具的信号</strong>的时机点是<strong>索引值发生了变更</strong>。</p>
+</blockquote>
+</li>
+</ul>
+<h3 class="atx" id="lessspan-iddouble-quotefunctionelevendouble-quotegreater采集-cassette-idlessspangreater"><span id="functionEleven">采集 Cassette ID</span></h3>
+<p><a href="#%E6%94%BE%E6%9D%BF%E6%9C%BA">返回放板机</a>/<a href="#%E4%B8%AD%E9%97%B4%E6%AE%B5">返回中间段</a>/<a href="#%E6%94%B6%E6%9D%BF%E6%9C%BA">返回收板机</a></p>
+<p><em>情况一：如果读取 Cassette ID 3 次后仍然失败，则发出报警<code>L2450</code>。</em>
+<em>情况二：如果读取 Cassette ID 成功，则设定好的<code>D8105</code>到<code>D8109</code>范围内会存储 Cassette ID。读取完成后<code>M1500</code>会 ON,读取到的 ID 也会传送到<code>ZR3930</code>开始的 10 个 word。0.1s 延迟后将索引值变更，IOT 监控到索引值变更，就会采集 Cassette ID。</em></p>
+<p>PLC 与 Reader 的通讯设置完毕后，还需要在 PLC 程序中添加<strong>触发</strong>和<strong>采集 Reader 的读取结果</strong>的程序，这一部分在<code>IOT_MES各功能.gxw</code>文件中的<code>M98</code>部分有完整的程序，可直接复制添加到程序中。</p>
+<blockquote>
+<ul>
+<li><strong>Local 状态下，机台升到工作位，按下 Reload 按钮</strong>可触发并采集 Reader 的读取结果，读取完成后<code>M4360 ON</code>；</li>
+<li><strong>Remote 模式下，机台升到工作位</strong>即可触发并读取 Reader 的读取结果，读取完成后<code>M4360 ON</code>。</li>
+<li><strong>工作位上无载具</strong>或<strong>按下 Reload 按钮的一瞬间</strong>，会将<code>M4360 OFF</code>。</li>
+</ul>
+</blockquote>
+<p>以下几种情况会将将读取完成信号<code>M1500</code>及 IOT 采集读取结果的<code>ZR3930</code>开始的 10 个 word 的点位清空复位：</p>
+<ol>
+<li>对于放板机来说，完板时</li>
+<li>对于收板机来说，满板时</li>
+<li>无载具在工作位时</li>
+<li>按下人机上 Reload 按钮时</li>
+</ol>
+<h3 class="atx" id="lessspan-iddouble-quotefunctiontwelveandthirteendouble-quotegreater切换生产信息-andamp-生产信息切换完成指令lessspangreater"><span id="functionTwelveAndThirteen">切换生产信息 &amp; 生产信息切换完成指令</span></h3>
+<p><a href="#%E6%94%BE%E6%9D%BF%E6%9C%BA">返回放板机</a>/<a href="#%E4%B8%AD%E9%97%B4%E6%AE%B5">返回中间段</a>/<a href="#%E6%94%B6%E6%9D%BF%E6%9C%BA">返回收板机</a></p>
+<p><em>IOT 先请求下发生产信息，下发的生产信息会给到<strong>预生成</strong>中，在满足切换条件后将<strong>预生成</strong>的生产信息切换为<strong>在制</strong>。切换完成后回复 IOT 切换完成，且将切换完成的索引值变更，IOT 在该索引值变更后会采集<strong>在制</strong>的生产信息。</em></p>
+<blockquote>
+<p><strong>生产信息</strong> </p>
+<p> <img width="567" alt="" title="" src="./images/2023-09-06-08-53-35-image.png">  </p>
+<p><strong>预生成</strong><br>相当于第三方，下发的生产信息先给到预生成，在满足切换条件后再切换为在制（在制的生产信息会显示到人机界面中），所以预生成有没有切换为在制，可以从人机界面上看到，下图中红色框内即<strong>在制的生产信息</strong>。
+<img width="667" alt="" src="./images/2023-09-06-09-02-52-image.png" title=""></p>
+</blockquote>
+<p>生产信息对应的<strong>IOT 下发点位</strong>、<strong>预生成点位</strong>、<strong>在制点位</strong>如下，也可在<code>设备交互文档-汇总-PLC.xlt</code>中找到。</p>
+<h5 class="atx" id="满足条件的条件是指什么？">满足条件的“条件”是指什么？</h5>
+<blockquote>
+<p>这是 IOT 给出的描述：
+当设备投入板带有最后板信号触发：</p>
+<ol>
+<li>设备先判断是否需要切换配方，需要切换配方，需要等到上一个载具全部投产完成，才切换载具信息。</li>
+<li>是否往下出板信号，当为 0 时设备最后板投产完成，需要设备自身控制禁止出板。为 1 时设备则不需要管控。</li>
+</ol>
+</blockquote>
+<p>关键词是<strong>是否切换配方</strong>、<strong>最后板投产完成</strong>和<strong>控制禁止出板</strong>。</p>
+<h5 class="atx" id="总结">总结</h5>
+<ul>
+<li>设备内无板<ul>
+<li>IOT 下发<strong>A 工单</strong>的生产信息到<code>ZR3900</code>开始的点位，由设备将<strong>A 工单</strong>的生产信息数据传送到<code>ZR50000</code>开始的点位，再切换到在制<code>D7170</code>开始的点位。</li>
+</ul>
+</li>
+</ul>
+<div class="mermaid" data-processed="true"><svg aria-roledescription="flowchart-v2" viewBox="-8 -7.999998092651367 399.01251220703125 56.599998474121094" style="max-width: 399.01251220703125px;" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="100%" id="mermaid-1694396367359"><style>#mermaid-1694396367359{font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:16px;fill:#333;}#mermaid-1694396367359 .error-icon{fill:#552222;}#mermaid-1694396367359 .error-text{fill:#552222;stroke:#552222;}#mermaid-1694396367359 .edge-thickness-normal{stroke-width:2px;}#mermaid-1694396367359 .edge-thickness-thick{stroke-width:3.5px;}#mermaid-1694396367359 .edge-pattern-solid{stroke-dasharray:0;}#mermaid-1694396367359 .edge-pattern-dashed{stroke-dasharray:3;}#mermaid-1694396367359 .edge-pattern-dotted{stroke-dasharray:2;}#mermaid-1694396367359 .marker{fill:#333333;stroke:#333333;}#mermaid-1694396367359 .marker.cross{stroke:#333333;}#mermaid-1694396367359 svg{font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:16px;}#mermaid-1694396367359 .label{font-family:"trebuchet ms",verdana,arial,sans-serif;color:#333;}#mermaid-1694396367359 .cluster-label text{fill:#333;}#mermaid-1694396367359 .cluster-label span{color:#333;}#mermaid-1694396367359 .label text,#mermaid-1694396367359 span{fill:#333;color:#333;}#mermaid-1694396367359 .node rect,#mermaid-1694396367359 .node circle,#mermaid-1694396367359 .node ellipse,#mermaid-1694396367359 .node polygon,#mermaid-1694396367359 .node path{fill:#ECECFF;stroke:#9370DB;stroke-width:1px;}#mermaid-1694396367359 .node .label{text-align:center;}#mermaid-1694396367359 .node.clickable{cursor:pointer;}#mermaid-1694396367359 .arrowheadPath{fill:#333333;}#mermaid-1694396367359 .edgePath .path{stroke:#333333;stroke-width:2.0px;}#mermaid-1694396367359 .flowchart-link{stroke:#333333;fill:none;}#mermaid-1694396367359 .edgeLabel{background-color:#e8e8e8;text-align:center;}#mermaid-1694396367359 .edgeLabel rect{opacity:0.5;background-color:#e8e8e8;fill:#e8e8e8;}#mermaid-1694396367359 .cluster rect{fill:#ffffde;stroke:#aaaa33;stroke-width:1px;}#mermaid-1694396367359 .cluster text{fill:#333;}#mermaid-1694396367359 .cluster span{color:#333;}#mermaid-1694396367359 div.mermaidTooltip{position:absolute;text-align:center;max-width:200px;padding:2px;font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:12px;background:hsl(80, 100%, 96.2745098039%);border:1px solid #aaaa33;border-radius:2px;pointer-events:none;z-index:100;}#mermaid-1694396367359 .flowchartTitleText{text-anchor:middle;font-size:18px;fill:#333;}#mermaid-1694396367359 :root{--mermaid-font-family:"trebuchet ms",verdana,arial,sans-serif;}</style><g><marker orient="auto" markerHeight="12" markerWidth="12" markerUnits="userSpaceOnUse" refY="5" refX="10" viewBox="0 0 10 10" class="marker flowchart" id="flowchart-pointEnd"><path style="stroke-width: 1; stroke-dasharray: 1, 0;" class="arrowMarkerPath" d="M 0 0 L 10 5 L 0 10 z"></path></marker><marker orient="auto" markerHeight="12" markerWidth="12" markerUnits="userSpaceOnUse" refY="5" refX="0" viewBox="0 0 10 10" class="marker flowchart" id="flowchart-pointStart"><path style="stroke-width: 1; stroke-dasharray: 1, 0;" class="arrowMarkerPath" d="M 0 5 L 10 10 L 10 0 z"></path></marker><marker orient="auto" markerHeight="11" markerWidth="11" markerUnits="userSpaceOnUse" refY="5" refX="11" viewBox="0 0 10 10" class="marker flowchart" id="flowchart-circleEnd"><circle style="stroke-width: 1; stroke-dasharray: 1, 0;" class="arrowMarkerPath" r="5" cy="5" cx="5"></circle></marker><marker orient="auto" markerHeight="11" markerWidth="11" markerUnits="userSpaceOnUse" refY="5" refX="-1" viewBox="0 0 10 10" class="marker flowchart" id="flowchart-circleStart"><circle style="stroke-width: 1; stroke-dasharray: 1, 0;" class="arrowMarkerPath" r="5" cy="5" cx="5"></circle></marker><marker orient="auto" markerHeight="11" markerWidth="11" markerUnits="userSpaceOnUse" refY="5.2" refX="12" viewBox="0 0 11 11" class="marker cross flowchart" id="flowchart-crossEnd"><path style="stroke-width: 2; stroke-dasharray: 1, 0;" class="arrowMarkerPath" d="M 1,1 l 9,9 M 10,1 l -9,9"></path></marker><marker orient="auto" markerHeight="11" markerWidth="11" markerUnits="userSpaceOnUse" refY="5.2" refX="-1" viewBox="0 0 11 11" class="marker cross flowchart" id="flowchart-crossStart"><path style="stroke-width: 2; stroke-dasharray: 1, 0;" class="arrowMarkerPath" d="M 1,1 l 9,9 M 10,1 l -9,9"></path></marker><g class="root"><g class="clusters"></g><g class="edgePaths"><path marker-end="url(#flowchart-pointEnd)" style="fill:none;" class="edge-thickness-normal edge-pattern-solid flowchart-link LS-workOrderA LE-buffer" id="L-workOrderA-buffer-0" d="M66.6875,20.299999237060547L74.30729166666667,20.299999237060547C81.92708333333333,20.299999237060547,97.16666666666667,20.299999237060547,112.40625,20.299999237060547C127.64583333333333,20.299999237060547,142.88541666666666,20.299999237060547,150.50520833333334,20.299999237060547L158.125,20.299999237060547"></path><path marker-end="url(#flowchart-pointEnd)" style="fill:none;" class="edge-thickness-normal edge-pattern-solid flowchart-link LS-buffer LE-WIP" id="L-buffer-WIP-0" d="M233.1999969482422,20.299999237060547L240.81978861490884,20.299999237060547C248.43958028157553,20.299999237060547,263.6791636149089,20.299999237060547,278.9187469482422,20.299999237060547C294.1583302815755,20.299999237060547,309.3979136149089,20.299999237060547,317.0177052815755,20.299999237060547L324.6374969482422,20.299999237060547"></path></g><g class="edgeLabels"><g transform="translate(112.40625, 20.299999237060547)" class="edgeLabel"><g transform="translate(-20.71875, -12.800000190734863)" class="label"><foreignObject height="25.600000381469727" width="41.4375"><div style="display: inline-block; white-space: nowrap;" xmlns="http://www.w3.org/1999/xhtml"><span class="edgeLabel">A工单</span></div></foreignObject></g></g><g transform="translate(278.9187469482422, 20.299999237060547)" class="edgeLabel"><g transform="translate(-20.71875, -12.800000190734863)" class="label"><foreignObject height="25.600000381469727" width="41.4375"><div style="display: inline-block; white-space: nowrap;" xmlns="http://www.w3.org/1999/xhtml"><span class="edgeLabel">A工单</span></div></foreignObject></g></g></g><g class="nodes"><g transform="translate(33.34375, 20.299999237060547)" id="flowchart-workOrderA-98" class="node default default"><rect height="40.60000038146973" width="66.6875" y="-20.300000190734863" x="-33.34375" ry="0" rx="0" style="" class="basic label-container"></rect><g transform="translate(-25.84375, -12.800000190734863)" style="" class="label"><foreignObject height="25.600000381469727" width="51.6875"><div style="display: inline-block; white-space: nowrap;" xmlns="http://www.w3.org/1999/xhtml"><span class="nodeLabel">ZR3900</span></div></foreignObject></g></g><g transform="translate(195.6624984741211, 20.299999237060547)" id="flowchart-buffer-99" class="node default default"><rect height="40.60000038146973" width="75.07500076293945" y="-20.300000190734863" x="-37.53750038146973" ry="0" rx="0" style="" class="basic label-container"></rect><g transform="translate(-30.037500381469727, -12.800000190734863)" style="" class="label"><foreignObject height="25.600000381469727" width="60.07500076293945"><div style="display: inline-block; white-space: nowrap;" xmlns="http://www.w3.org/1999/xhtml"><span class="nodeLabel">ZR50000</span></div></foreignObject></g></g><g transform="translate(353.8249969482422, 20.299999237060547)" id="flowchart-WIP-101" class="node default default"><rect height="40.60000038146973" width="58.375" y="-20.300000190734863" x="-29.1875" ry="0" rx="0" style="" class="basic label-container"></rect><g transform="translate(-21.6875, -12.800000190734863)" style="" class="label"><foreignObject height="25.600000381469727" width="43.375"><div style="display: inline-block; white-space: nowrap;" xmlns="http://www.w3.org/1999/xhtml"><span class="nodeLabel">D7170</span></div></foreignObject></g></g></g></g></g></svg></div>
+<ul>
+<li>设备内有板<ul>
+<li>切换配方<ul>
+<li>IOT 下发<strong>B 工单</strong>的生产信息到<code>ZR3900</code>开始的点位，由设备将<strong>B 工单</strong>的生产信息数据传送到<code>ZR50000</code>开始的点位，等待<strong>A 工单</strong>的板子全部产出后再切换到在制<code>D7170</code>开始的点位，包括需要切换的配方。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<div class="mermaid" data-processed="true"><svg aria-roledescription="flowchart-v2" viewBox="-8 -8 739.1375122070312 104.4375" style="max-width: 739.1375122070312px;" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="100%" id="mermaid-1694396367430"><style>#mermaid-1694396367430{font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:16px;fill:#333;}#mermaid-1694396367430 .error-icon{fill:#552222;}#mermaid-1694396367430 .error-text{fill:#552222;stroke:#552222;}#mermaid-1694396367430 .edge-thickness-normal{stroke-width:2px;}#mermaid-1694396367430 .edge-thickness-thick{stroke-width:3.5px;}#mermaid-1694396367430 .edge-pattern-solid{stroke-dasharray:0;}#mermaid-1694396367430 .edge-pattern-dashed{stroke-dasharray:3;}#mermaid-1694396367430 .edge-pattern-dotted{stroke-dasharray:2;}#mermaid-1694396367430 .marker{fill:#333333;stroke:#333333;}#mermaid-1694396367430 .marker.cross{stroke:#333333;}#mermaid-1694396367430 svg{font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:16px;}#mermaid-1694396367430 .label{font-family:"trebuchet ms",verdana,arial,sans-serif;color:#333;}#mermaid-1694396367430 .cluster-label text{fill:#333;}#mermaid-1694396367430 .cluster-label span{color:#333;}#mermaid-1694396367430 .label text,#mermaid-1694396367430 span{fill:#333;color:#333;}#mermaid-1694396367430 .node rect,#mermaid-1694396367430 .node circle,#mermaid-1694396367430 .node ellipse,#mermaid-1694396367430 .node polygon,#mermaid-1694396367430 .node path{fill:#ECECFF;stroke:#9370DB;stroke-width:1px;}#mermaid-1694396367430 .node .label{text-align:center;}#mermaid-1694396367430 .node.clickable{cursor:pointer;}#mermaid-1694396367430 .arrowheadPath{fill:#333333;}#mermaid-1694396367430 .edgePath .path{stroke:#333333;stroke-width:2.0px;}#mermaid-1694396367430 .flowchart-link{stroke:#333333;fill:none;}#mermaid-1694396367430 .edgeLabel{background-color:#e8e8e8;text-align:center;}#mermaid-1694396367430 .edgeLabel rect{opacity:0.5;background-color:#e8e8e8;fill:#e8e8e8;}#mermaid-1694396367430 .cluster rect{fill:#ffffde;stroke:#aaaa33;stroke-width:1px;}#mermaid-1694396367430 .cluster text{fill:#333;}#mermaid-1694396367430 .cluster span{color:#333;}#mermaid-1694396367430 div.mermaidTooltip{position:absolute;text-align:center;max-width:200px;padding:2px;font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:12px;background:hsl(80, 100%, 96.2745098039%);border:1px solid #aaaa33;border-radius:2px;pointer-events:none;z-index:100;}#mermaid-1694396367430 .flowchartTitleText{text-anchor:middle;font-size:18px;fill:#333;}#mermaid-1694396367430 :root{--mermaid-font-family:"trebuchet ms",verdana,arial,sans-serif;}</style><g><marker orient="auto" markerHeight="12" markerWidth="12" markerUnits="userSpaceOnUse" refY="5" refX="10" viewBox="0 0 10 10" class="marker flowchart" id="flowchart-pointEnd"><path style="stroke-width: 1; stroke-dasharray: 1, 0;" class="arrowMarkerPath" d="M 0 0 L 10 5 L 0 10 z"></path></marker><marker orient="auto" markerHeight="12" markerWidth="12" markerUnits="userSpaceOnUse" refY="5" refX="0" viewBox="0 0 10 10" class="marker flowchart" id="flowchart-pointStart"><path style="stroke-width: 1; stroke-dasharray: 1, 0;" class="arrowMarkerPath" d="M 0 5 L 10 10 L 10 0 z"></path></marker><marker orient="auto" markerHeight="11" markerWidth="11" markerUnits="userSpaceOnUse" refY="5" refX="11" viewBox="0 0 10 10" class="marker flowchart" id="flowchart-circleEnd"><circle style="stroke-width: 1; stroke-dasharray: 1, 0;" class="arrowMarkerPath" r="5" cy="5" cx="5"></circle></marker><marker orient="auto" markerHeight="11" markerWidth="11" markerUnits="userSpaceOnUse" refY="5" refX="-1" viewBox="0 0 10 10" class="marker flowchart" id="flowchart-circleStart"><circle style="stroke-width: 1; stroke-dasharray: 1, 0;" class="arrowMarkerPath" r="5" cy="5" cx="5"></circle></marker><marker orient="auto" markerHeight="11" markerWidth="11" markerUnits="userSpaceOnUse" refY="5.2" refX="12" viewBox="0 0 11 11" class="marker cross flowchart" id="flowchart-crossEnd"><path style="stroke-width: 2; stroke-dasharray: 1, 0;" class="arrowMarkerPath" d="M 1,1 l 9,9 M 10,1 l -9,9"></path></marker><marker orient="auto" markerHeight="11" markerWidth="11" markerUnits="userSpaceOnUse" refY="5.2" refX="-1" viewBox="0 0 11 11" class="marker cross flowchart" id="flowchart-crossStart"><path style="stroke-width: 2; stroke-dasharray: 1, 0;" class="arrowMarkerPath" d="M 1,1 l 9,9 M 10,1 l -9,9"></path></marker><g class="root"><g class="clusters"></g><g class="edgePaths"><path style="fill:none;" class="edge-thickness-normal edge-pattern-solid flowchart-link LS-WIP1 LE-workOrderB" id="L-WIP1-workOrderB-0" d="M88.4375,44.21875L92.60416666666667,44.21875C96.77083333333333,44.21875,105.10416666666667,44.21875,113.4375,44.21875C121.77083333333333,44.21875,130.10416666666666,44.21875,134.27083333333334,44.21875L138.4375,44.21875"></path><path marker-end="url(#flowchart-pointEnd)" style="fill:none;" class="edge-thickness-normal edge-pattern-solid flowchart-link LS-workOrderB LE-buffer" id="L-workOrderB-buffer-0" d="M205.125,44.21875L212.71354166666666,44.21875C220.30208333333334,44.21875,235.47916666666666,44.21875,250.65625,44.21875C265.8333333333333,44.21875,281.0104166666667,44.21875,288.5989583333333,44.21875L296.1875,44.21875"></path><path style="fill:none;" class="edge-thickness-normal edge-pattern-solid flowchart-link LS-buffer LE-switchMoment" id="L-buffer-switchMoment-0" d="M371.2624969482422,44.21875L375.4291636149089,44.21875C379.5958302815755,44.21875,387.9291636149089,44.21875,396.2624969482422,44.21875C404.5958302815755,44.21875,412.9291636149089,44.21875,417.0958302815755,44.21875L421.2624969482422,44.21875"></path><path marker-end="url(#flowchart-pointEnd)" style="fill:none;" class="edge-thickness-normal edge-pattern-solid flowchart-link LS-switchMoment LE-WIP2" id="L-switchMoment-WIP2-0" d="M573.6999969482422,44.21875L581.2885386149088,44.21875C588.8770802815756,44.21875,604.0541636149088,44.21875,619.2312469482422,44.21875C634.4083302815756,44.21875,649.5854136149088,44.21875,657.1739552815756,44.21875L664.7624969482422,44.21875"></path></g><g class="edgeLabels"><g class="edgeLabel"><g transform="translate(0, 0)" class="label"><foreignObject height="0" width="0"><div style="display: inline-block; white-space: nowrap;" xmlns="http://www.w3.org/1999/xhtml"><span class="edgeLabel"></span></div></foreignObject></g></g><g transform="translate(250.65625, 44.21875)" class="edgeLabel"><g transform="translate(-20.53125, -12.800000190734863)" class="label"><foreignObject height="25.600000381469727" width="41.0625"><div style="display: inline-block; white-space: nowrap;" xmlns="http://www.w3.org/1999/xhtml"><span class="edgeLabel">B工单</span></div></foreignObject></g></g><g class="edgeLabel"><g transform="translate(0, 0)" class="label"><foreignObject height="0" width="0"><div style="display: inline-block; white-space: nowrap;" xmlns="http://www.w3.org/1999/xhtml"><span class="edgeLabel"></span></div></foreignObject></g></g><g transform="translate(619.2312469482422, 44.21875)" class="edgeLabel"><g transform="translate(-20.53125, -12.800000190734863)" class="label"><foreignObject height="25.600000381469727" width="41.0625"><div style="display: inline-block; white-space: nowrap;" xmlns="http://www.w3.org/1999/xhtml"><span class="edgeLabel">B工单</span></div></foreignObject></g></g></g><g class="nodes"><g transform="translate(44.21875, 44.21875)" id="flowchart-WIP1-118" class="node default default"><circle height="40.60000038146973" width="88.4375" r="44.21875" ry="0" rx="0" style=""></circle><g transform="translate(-36.71875, -12.800000190734863)" style="" class="label"><foreignObject height="25.600000381469727" width="73.4375"><div style="display: inline-block; white-space: nowrap;" xmlns="http://www.w3.org/1999/xhtml"><span class="nodeLabel">A工单在制</span></div></foreignObject></g></g><g transform="translate(171.78125, 44.21875)" id="flowchart-workOrderB-119" class="node default default"><rect height="40.60000038146973" width="66.6875" y="-20.300000190734863" x="-33.34375" ry="0" rx="0" style="" class="basic label-container"></rect><g transform="translate(-25.84375, -12.800000190734863)" style="" class="label"><foreignObject height="25.600000381469727" width="51.6875"><div style="display: inline-block; white-space: nowrap;" xmlns="http://www.w3.org/1999/xhtml"><span class="nodeLabel">ZR3900</span></div></foreignObject></g></g><g transform="translate(333.7249984741211, 44.21875)" id="flowchart-buffer-121" class="node default default"><rect height="40.60000038146973" width="75.07500076293945" y="-20.300000190734863" x="-37.53750038146973" ry="0" rx="0" style="" class="basic label-container"></rect><g transform="translate(-30.037500381469727, -12.800000190734863)" style="" class="label"><foreignObject height="25.600000381469727" width="60.07500076293945"><div style="display: inline-block; white-space: nowrap;" xmlns="http://www.w3.org/1999/xhtml"><span class="nodeLabel">ZR50000</span></div></foreignObject></g></g><g transform="translate(497.4812469482422, 44.21875)" id="flowchart-switchMoment-123" class="node default default"><rect height="40.60000038146973" width="152.4375" y="-20.300000190734863" x="-76.21875" ry="0" rx="0" style="" class="basic label-container"></rect><g transform="translate(-68.71875, -12.800000190734863)" style="" class="label"><foreignObject height="25.600000381469727" width="137.4375"><div style="display: inline-block; white-space: nowrap;" xmlns="http://www.w3.org/1999/xhtml"><span class="nodeLabel">A工单最后一片产出</span></div></foreignObject></g></g><g transform="translate(693.9499969482422, 44.21875)" id="flowchart-WIP2-125" class="node default default"><rect height="40.60000038146973" width="58.375" y="-20.300000190734863" x="-29.1875" ry="0" rx="0" style="" class="basic label-container"></rect><g transform="translate(-21.6875, -12.800000190734863)" style="" class="label"><foreignObject height="25.600000381469727" width="43.375"><div style="display: inline-block; white-space: nowrap;" xmlns="http://www.w3.org/1999/xhtml"><span class="nodeLabel">D7170</span></div></foreignObject></g></g></g></g></g></svg></div>
+<ul>
+<li>设备内有板<ul>
+<li>不切换配方<ul>
+<li>IOT 下发<strong>B 工单</strong>的生产信息到<code>ZR3900</code>开始的点位，由设备将<strong>B 工单</strong>的生产信息数据传送到<code>ZR50000</code>开始的点位，由于不切换配方，所以不必等待<strong>A 工单</strong>的板子全部产出后再切换到在制<code>D7170</code>开始的点位。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<div class="mermaid" data-processed="true"><svg aria-roledescription="flowchart-v2" viewBox="-8 -8 536.7000122070312 104.4375" style="max-width: 536.7000122070312px;" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="100%" id="mermaid-1694396367470"><style>#mermaid-1694396367470{font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:16px;fill:#333;}#mermaid-1694396367470 .error-icon{fill:#552222;}#mermaid-1694396367470 .error-text{fill:#552222;stroke:#552222;}#mermaid-1694396367470 .edge-thickness-normal{stroke-width:2px;}#mermaid-1694396367470 .edge-thickness-thick{stroke-width:3.5px;}#mermaid-1694396367470 .edge-pattern-solid{stroke-dasharray:0;}#mermaid-1694396367470 .edge-pattern-dashed{stroke-dasharray:3;}#mermaid-1694396367470 .edge-pattern-dotted{stroke-dasharray:2;}#mermaid-1694396367470 .marker{fill:#333333;stroke:#333333;}#mermaid-1694396367470 .marker.cross{stroke:#333333;}#mermaid-1694396367470 svg{font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:16px;}#mermaid-1694396367470 .label{font-family:"trebuchet ms",verdana,arial,sans-serif;color:#333;}#mermaid-1694396367470 .cluster-label text{fill:#333;}#mermaid-1694396367470 .cluster-label span{color:#333;}#mermaid-1694396367470 .label text,#mermaid-1694396367470 span{fill:#333;color:#333;}#mermaid-1694396367470 .node rect,#mermaid-1694396367470 .node circle,#mermaid-1694396367470 .node ellipse,#mermaid-1694396367470 .node polygon,#mermaid-1694396367470 .node path{fill:#ECECFF;stroke:#9370DB;stroke-width:1px;}#mermaid-1694396367470 .node .label{text-align:center;}#mermaid-1694396367470 .node.clickable{cursor:pointer;}#mermaid-1694396367470 .arrowheadPath{fill:#333333;}#mermaid-1694396367470 .edgePath .path{stroke:#333333;stroke-width:2.0px;}#mermaid-1694396367470 .flowchart-link{stroke:#333333;fill:none;}#mermaid-1694396367470 .edgeLabel{background-color:#e8e8e8;text-align:center;}#mermaid-1694396367470 .edgeLabel rect{opacity:0.5;background-color:#e8e8e8;fill:#e8e8e8;}#mermaid-1694396367470 .cluster rect{fill:#ffffde;stroke:#aaaa33;stroke-width:1px;}#mermaid-1694396367470 .cluster text{fill:#333;}#mermaid-1694396367470 .cluster span{color:#333;}#mermaid-1694396367470 div.mermaidTooltip{position:absolute;text-align:center;max-width:200px;padding:2px;font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:12px;background:hsl(80, 100%, 96.2745098039%);border:1px solid #aaaa33;border-radius:2px;pointer-events:none;z-index:100;}#mermaid-1694396367470 .flowchartTitleText{text-anchor:middle;font-size:18px;fill:#333;}#mermaid-1694396367470 :root{--mermaid-font-family:"trebuchet ms",verdana,arial,sans-serif;}</style><g><marker orient="auto" markerHeight="12" markerWidth="12" markerUnits="userSpaceOnUse" refY="5" refX="10" viewBox="0 0 10 10" class="marker flowchart" id="flowchart-pointEnd"><path style="stroke-width: 1; stroke-dasharray: 1, 0;" class="arrowMarkerPath" d="M 0 0 L 10 5 L 0 10 z"></path></marker><marker orient="auto" markerHeight="12" markerWidth="12" markerUnits="userSpaceOnUse" refY="5" refX="0" viewBox="0 0 10 10" class="marker flowchart" id="flowchart-pointStart"><path style="stroke-width: 1; stroke-dasharray: 1, 0;" class="arrowMarkerPath" d="M 0 5 L 10 10 L 10 0 z"></path></marker><marker orient="auto" markerHeight="11" markerWidth="11" markerUnits="userSpaceOnUse" refY="5" refX="11" viewBox="0 0 10 10" class="marker flowchart" id="flowchart-circleEnd"><circle style="stroke-width: 1; stroke-dasharray: 1, 0;" class="arrowMarkerPath" r="5" cy="5" cx="5"></circle></marker><marker orient="auto" markerHeight="11" markerWidth="11" markerUnits="userSpaceOnUse" refY="5" refX="-1" viewBox="0 0 10 10" class="marker flowchart" id="flowchart-circleStart"><circle style="stroke-width: 1; stroke-dasharray: 1, 0;" class="arrowMarkerPath" r="5" cy="5" cx="5"></circle></marker><marker orient="auto" markerHeight="11" markerWidth="11" markerUnits="userSpaceOnUse" refY="5.2" refX="12" viewBox="0 0 11 11" class="marker cross flowchart" id="flowchart-crossEnd"><path style="stroke-width: 2; stroke-dasharray: 1, 0;" class="arrowMarkerPath" d="M 1,1 l 9,9 M 10,1 l -9,9"></path></marker><marker orient="auto" markerHeight="11" markerWidth="11" markerUnits="userSpaceOnUse" refY="5.2" refX="-1" viewBox="0 0 11 11" class="marker cross flowchart" id="flowchart-crossStart"><path style="stroke-width: 2; stroke-dasharray: 1, 0;" class="arrowMarkerPath" d="M 1,1 l 9,9 M 10,1 l -9,9"></path></marker><g class="root"><g class="clusters"></g><g class="edgePaths"><path style="fill:none;" class="edge-thickness-normal edge-pattern-solid flowchart-link LS-WIP1 LE-workOrderB" id="L-WIP1-workOrderB-0" d="M88.4375,44.21875L92.60416666666667,44.21875C96.77083333333333,44.21875,105.10416666666667,44.21875,113.4375,44.21875C121.77083333333333,44.21875,130.10416666666666,44.21875,134.27083333333334,44.21875L138.4375,44.21875"></path><path marker-end="url(#flowchart-pointEnd)" style="fill:none;" class="edge-thickness-normal edge-pattern-solid flowchart-link LS-workOrderB LE-buffer" id="L-workOrderB-buffer-0" d="M205.125,44.21875L212.71354166666666,44.21875C220.30208333333334,44.21875,235.47916666666666,44.21875,250.65625,44.21875C265.8333333333333,44.21875,281.0104166666667,44.21875,288.5989583333333,44.21875L296.1875,44.21875"></path><path marker-end="url(#flowchart-pointEnd)" style="fill:none;" class="edge-thickness-normal edge-pattern-solid flowchart-link LS-buffer LE-WIP2" id="L-buffer-WIP2-0" d="M371.2624969482422,44.21875L378.8510386149089,44.21875C386.4395802815755,44.21875,401.6166636149089,44.21875,416.7937469482422,44.21875C431.9708302815755,44.21875,447.1479136149089,44.21875,454.7364552815755,44.21875L462.3249969482422,44.21875"></path></g><g class="edgeLabels"><g class="edgeLabel"><g transform="translate(0, 0)" class="label"><foreignObject height="0" width="0"><div style="display: inline-block; white-space: nowrap;" xmlns="http://www.w3.org/1999/xhtml"><span class="edgeLabel"></span></div></foreignObject></g></g><g transform="translate(250.65625, 44.21875)" class="edgeLabel"><g transform="translate(-20.53125, -12.800000190734863)" class="label"><foreignObject height="25.600000381469727" width="41.0625"><div style="display: inline-block; white-space: nowrap;" xmlns="http://www.w3.org/1999/xhtml"><span class="edgeLabel">B工单</span></div></foreignObject></g></g><g transform="translate(416.7937469482422, 44.21875)" class="edgeLabel"><g transform="translate(-20.53125, -12.800000190734863)" class="label"><foreignObject height="25.600000381469727" width="41.0625"><div style="display: inline-block; white-space: nowrap;" xmlns="http://www.w3.org/1999/xhtml"><span class="edgeLabel">B工单</span></div></foreignObject></g></g></g><g class="nodes"><g transform="translate(44.21875, 44.21875)" id="flowchart-WIP1-138" class="node default default"><circle height="40.60000038146973" width="88.4375" r="44.21875" ry="0" rx="0" style=""></circle><g transform="translate(-36.71875, -12.800000190734863)" style="" class="label"><foreignObject height="25.600000381469727" width="73.4375"><div style="display: inline-block; white-space: nowrap;" xmlns="http://www.w3.org/1999/xhtml"><span class="nodeLabel">A工单在制</span></div></foreignObject></g></g><g transform="translate(171.78125, 44.21875)" id="flowchart-workOrderB-139" class="node default default"><rect height="40.60000038146973" width="66.6875" y="-20.300000190734863" x="-33.34375" ry="0" rx="0" style="" class="basic label-container"></rect><g transform="translate(-25.84375, -12.800000190734863)" style="" class="label"><foreignObject height="25.600000381469727" width="51.6875"><div style="display: inline-block; white-space: nowrap;" xmlns="http://www.w3.org/1999/xhtml"><span class="nodeLabel">ZR3900</span></div></foreignObject></g></g><g transform="translate(333.7249984741211, 44.21875)" id="flowchart-buffer-141" class="node default default"><rect height="40.60000038146973" width="75.07500076293945" y="-20.300000190734863" x="-37.53750038146973" ry="0" rx="0" style="" class="basic label-container"></rect><g transform="translate(-30.037500381469727, -12.800000190734863)" style="" class="label"><foreignObject height="25.600000381469727" width="60.07500076293945"><div style="display: inline-block; white-space: nowrap;" xmlns="http://www.w3.org/1999/xhtml"><span class="nodeLabel">ZR50000</span></div></foreignObject></g></g><g transform="translate(491.5124969482422, 44.21875)" id="flowchart-WIP2-143" class="node default default"><rect height="40.60000038146973" width="58.375" y="-20.300000190734863" x="-29.1875" ry="0" rx="0" style="" class="basic label-container"></rect><g transform="translate(-21.6875, -12.800000190734863)" style="" class="label"><foreignObject height="25.600000381469727" width="43.375"><div style="display: inline-block; white-space: nowrap;" xmlns="http://www.w3.org/1999/xhtml"><span class="nodeLabel">D7170</span></div></foreignObject></g></g></g></g></g></svg></div>
+<h3 class="atx" id="lessspan-iddouble-quotefunctionfourteenpcbindouble-quotegreater设备投入-panel-信号lessspangreater"><a href="#%E6%94%BE%E6%9D%BF%E6%9C%BA"><span id="functionFourteenPcbIn">设备投入 Panel 信号</span></a></h3>
+<p><em>在 IOT 下发<a href="#functionSeventeen">允许投板</a>的指令后，手臂才会下降吸板，从步进位中找到合适的点位作为投入 Panel 信号的时机点，0.1s 延迟后将投入的索引值变更。IOT 监控到该索引值变更后便会采集投入 Panel 的帐。</em></p>
+<blockquote>
+<p><strong>帐</strong> </p>
+<p> <img alt="" src="./images/2023-09-06-17-17-11-image.png"></p>
+<p><strong>料</strong><br>实体的板子<br><strong>有料无帐</strong><br>简单来说，就是在投入时没有该板子对应的帐。</p>
+</blockquote>
+<p>从上图中可以看出来，放板机的<strong>虚拟 Panel ID</strong>以及<strong>是否最后一块板</strong>是由设备自己生成的。</p>
+<ul>
+<li><p>虚拟载具码<code>ZR450</code>，即 Cassette Code，是 IOT 在下发生产信息时就会提供的数据；</p>
+</li>
+<li><p>虚拟 Panel ID<code>ZR451</code>，是在合适的时机点由设备自动生成，每投入一块板子，<code>ZR451</code>便会自动加 1，放板片数到达后将其清零；</p>
+</li>
+<li><p>是否最后一块板，完板时将此信号赋值为 1</p>
+<h3 class="atx" id="lessspan-iddouble-quotefunctionfifteenpcbindouble-quotegreater设备产出-panel-信号lessspangreater"><a href="#%E6%94%BE%E6%9D%BF%E6%9C%BA"><span id="functionFifteenPcbIn">设备产出 Panel 信号</span></a></h3>
+</li>
+</ul>
+<p><em>与产出类似，从步进位中寻找合适的点位作为产出 Panel 信号的时机点，或者使用出料感应器的下降沿作为此时机点，0.1s 延迟后将产出的索引值变更。IOT 监控到该索引值变更后便会采集产出 Panel 的帐。</em></p>
+<blockquote>
+<p>对于放板机来说，从投入到产出是一个完整的带帐过程，期间还包括可能存在的<strong>拔片</strong>，即<a href="#functionSixteen">删除设备待生产虚拟 Panel 信息指令</a>。</p>
+<p><strong>带帐的逻辑</strong></p>
+<p>对于放板机来说，在现场实际作业中，板子会被装在载具中，开始作业后载具上升到工作位 ➡️ 手臂移载到工作位 ➡️ 手臂下降吸板 ➡️ 确认吸取到板子 ➡️ 手臂上升 ➡️ 手臂移载到输送滚轮上方 ➡️ 手臂下降放板 ➡️ 手臂放板后上升 ➡️ 输送滚轮将板子输送至下一段。</p>
+<p>在上面这一段大致的流程中，板子的位置先从<strong>载具中</strong>➡️<strong>手臂</strong>➡️<strong>输送滚轮</strong>➡️<strong>产出</strong>。</p>
+<p>前半部分（<strong>载具中</strong>➡️<strong>手臂</strong>）可以认为是投入，后半部分（<strong>输送滚轮</strong>➡️<strong>产出</strong>）可以认为是产出。</p>
+<p>而带帐的逻辑则是根据实体板子的动作，将帐从<strong>载具中</strong>➡️<strong>手臂</strong>➡️<strong>输送滚轮</strong>➡️<strong>产出</strong>。</p>
+</blockquote>
+<p>这里有必要引入一个带帐相关的点位规划。</p>
+<table>
+<thead>
+<tr>
+<th>手臂</th>
+<th>CV1</th>
+<th>CV2</th>
+<th>CV3</th>
+<th>CV4</th>
+<th>CV5</th>
+<th>CV6</th>
+<th>CV7</th>
+<th>CV8</th>
+<th>CV9</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>ZR40000</code></td>
+<td><code>ZR40010</code></td>
+<td><code>ZR40020</code></td>
+<td><code>ZR40030</code></td>
+<td><code>ZR40040</code></td>
+<td><code>ZR40050</code></td>
+<td><code>ZR40060</code></td>
+<td><code>ZR40070</code></td>
+<td><code>ZR40080</code></td>
+<td><code>ZR40090</code></td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th>暂存 1</th>
+<th>暂存 2</th>
+<th>暂存 3</th>
+<th>暂存 4</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>ZR45000</code></td>
+<td><code>ZR46000</code></td>
+<td><code>ZR47000</code></td>
+<td><code>ZR48000</code></td>
+</tr>
+</tbody></table>
+<h3 class="atx" id="lessspan-iddouble-quotefunctionsixteendouble-quotegreater删除待生产虚拟-panel-信息指令lessspangreater"><span id="functionSixteen">删除待生产虚拟 Panel 信息指令</span></h3>
+<p><a href="#%E6%94%BE%E6%9D%BF%E6%9C%BA">返回放板机</a>/<a href="#%E4%B8%AD%E9%97%B4%E6%AE%B5">返回中间段</a>/<a href="#%E6%94%B6%E6%9D%BF%E6%9C%BA">返回收板机</a></p>
+<p><em>IOT 在<code>ZR41450</code>以及<code>ZR41451</code>中分别写下待删除的虚拟载具码和虚拟 Panel ID，若在设备中循环一次 并能找到与此一致的，便会将设备中存储的虚拟载具码和虚拟 Panel ID 清零，达到删除的效果。</em></p>
+<p>这一段用到了<code>FOR-NEXT</code>指令，具体可从同文件夹内的<code>Q系列共用指令.pdf</code>中找到解释。</p>
+<p>IOT 给出待删除的 Panel 信息，并发出请求，设备收到交握请求后<code>B474 ON</code>开始循环找出与待删除的 Panel 信息一致的部分，并将其清零，<code>RST B474</code>，交握回复<code>B409</code>。至此完成此功能。</p>
+<p>这段有一个<code>Z0</code>，这是变址寄存器中的点位，可以理解为变量。</p>
+<h3 class="atx" id="lessspan-iddouble-quotefunctionseventeendouble-quotegreater控制取放板lessspangreater"><a href="#%E6%94%BE%E6%9D%BF%E6%9C%BA"><span id="functionSeventeen">控制取放板</span></a></h3>
+<p><em>IOT 控制放板机是否投板，如果给<code>ZR3850</code>为 1，则投板，给 0 则不投板。离线模式下不受 IOT 控制，默认允许投产（<code>ZR41</code>）。</em></p>
+<p>这部分功能的主要逻辑就是<strong>在手臂下降吸板的动作之前多加上 IOT 允许投板的条件</strong>，即<code>M350例</code>中那样，而<code>M350</code>则是为离线模式多做一个条件卡控（猜测）。</p>
+<p>除了 IOT 控制的放板机是否投板外，还涉及到载具状态<code>ZR251</code>，大多数情况下需要<code>ZR251</code>的值为 2 或 3 时，才可正常生产。</p>
+<img width="934" alt="" title="" src="./images/2023-09-08-16-38-10-image.png">
+
+<p>共 6 个状态，分别如下表所示：</p>
+<table>
+<thead>
+<tr>
+<th align="center">0</th>
+<th align="center">1</th>
+<th align="center">2</th>
+<th align="center">3</th>
+<th align="center">4</th>
+<th align="center">5</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">No Cassette Exist</td>
+<td align="center">Waiting for Cassette Data</td>
+<td align="center">Waiting for Processing</td>
+<td align="center">In Processing</td>
+<td align="center">Process Paused</td>
+<td align="center">Process End</td>
+</tr>
+</tbody></table>
+<blockquote>
+<p>不过从人机上看这里的点位其实是<code>ZR2501</code>，并不是<code>ZR251</code>。关于这个疑问，我请教过别人，给的解释是说，这两个其实是一样的，<code>ZR2501 = ZR251</code>。</p>
+</blockquote>
+<h3 class="atx" id="lessspan-iddouble-quotefunctioneighteendouble-quotegreater镭雕请求条码lessspangreater"><a href="#%E6%94%BE%E6%9D%BF%E6%9C%BA"><span id="functionEighteen">镭雕请求条码</span></a></h3>
+<p><em>此功能为镭雕机专用，而镭雕机现在已经不对接 MES，故在此不做解释。</em></p>
+<h2 class="atx" id="收板机">收板机</h2>
+<table>
+<thead>
+<tr>
+<th>序号</th>
+<th>设备采集及控制功能</th>
+<th>设备信息</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>9</td>
+<td><a href="#functionNine">设备启停控制</a></td>
+<td>所有设备</td>
+<td>收板机能接收 IoT 下发的停机/开机指令。</td>
+</tr>
+<tr>
+<td>10</td>
+<td><a href="#functionTen">是否存在载具的信号</a></td>
+<td>所有设备</td>
+<td>收板机没有载具的时候，需产生空料信号。</td>
+</tr>
+<tr>
+<td>11</td>
+<td><a href="#functionEleven">采集 Cassette ID</a></td>
+<td>所有设备</td>
+<td>收板机扫描 cassette ID 时，需将 cassette ID 信息上传，如果扫描不成功需要报警。</td>
+</tr>
+<tr>
+<td>12</td>
+<td><a href="#functionTwelveAndThirteen">切换生产信息</a></td>
+<td>所有设备</td>
+<td>收板机在收到 IoT 下发的新 cassette 信息时，设备然后 cassette 投入数量清零，并重新计数</td>
+</tr>
+<tr>
+<td>13</td>
+<td><a href="#functionTwelveAndThirteen">生产信息切换完成指令</a></td>
+<td>所有设备</td>
+<td>当设备切换生产信息完成时上报给 IOT。</td>
+</tr>
+<tr>
+<td>14</td>
+<td><a href="#functionFourteenPcbOut">设备投入 Panel 信号</a></td>
+<td>所有设备</td>
+<td>设备投入 Panel 信号</td>
+</tr>
+<tr>
+<td>15</td>
+<td><a href="#functionFifteenPcbOut">设备产出 Panel 信号</a></td>
+<td>所有设备</td>
+<td>设备产出 Panel 信号</td>
+</tr>
+<tr>
+<td>16</td>
+<td><a href="#functionSixteen">删除待生产虚拟 Panel 信息指令</a></td>
+<td>所有设备</td>
+<td>删除待生产虚拟 Panel 信息指令</td>
+</tr>
+<tr>
+<td>19</td>
+<td><a href="#functionNineteen">设备待生成 Panel 信息写入</a></td>
+<td>所有设备</td>
+<td>设备生产 Panel 信息写入</td>
+</tr>
+<tr>
+<td>20</td>
+<td><a href="#functionTwenty">收板机退 Port 信号</a></td>
+<td>所有设备</td>
+<td>收板机退 PORT</td>
+</tr>
+<tr>
+<td>21</td>
+<td><a href="#functionTwentyOne">满盘数量修改</a></td>
+<td>所有设备</td>
+<td>收板机在收到 IoT 写入满载数量，只要写入的数据小于当前收板载具已收的数量就可以实现更改。</td>
+</tr>
+</tbody></table>
+<blockquote>
+<p>序号为 9、10、11、12、13、16 的功能收放板机相同，在此不多做赘述。</p>
+</blockquote>
+<h3 class="atx" id="lessspan-iddouble-quotefunctionfourteenpcboutdouble-quotegreater设备投入-panel-信号lessspangreater"><a href="#%E6%94%B6%E6%9D%BF%E6%9C%BA"><span id="functionFourteenPcbOut">设备投入 Panel 信号</span></a></h3>
+<p><em>当板子完全进入收板机时，设备将待生成的帐传送到投入点位<code>ZR41500</code>和输送滚轮<code>ZR40010</code>开始的 3 个 word，并给出板子已投入信号<code>B452</code>；设备若没有待生成的帐，则认为是<strong>有料无帐</strong>，发出<code>L2435</code>的警报并鸣笛。有料无帐时需要将<strong>投入及产出的虚拟 Cassette Code</strong>清零，以便 IOT 做交互逻辑处理。<code>B452 ON</code> 0.1s 后将投入的索引值<code>ZR41503</code>变更，IOT 监控到索引值变更后便会来采集投入的 Panel 信息。</em></p>
+<blockquote>
+<p>收板机的投入 Panel 信号与放板机不同，收板机投入的帐是由 IOT 提供到待生成，设备再自行从待生成中传送到投入点位的。放板机的则是自行生成的帐。</p>
+</blockquote>
+<h3 class="atx" id="lessspan-iddouble-quotefunctionfifteenpcboutdouble-quotegreater设备产出-panel-信号lessspangreater"><a href="#%E6%94%B6%E6%9D%BF%E6%9C%BA"><span id="functionFifteenPcbOut">设备产出 Panel 信号</span></a></h3>
+<p><em>由于收板机比放板机多出一个读板子的 Reader，所以收板机在产出时需要将读到的 Panel ID 传送到<code>ZR41810</code>开始的 15 个 word，所以找到一个合适的产出的时机点就显得尤为重要。产出时，产出信号<code>B453 ON</code>，0.1s 延迟后将产出的索引值进行变更，IOT 监控到索引值变更便会采集产出的 Panel 信息。</em></p>
+<blockquote>
+<p><strong>合适的产出时机点</strong>
+读板子的 Reader 大部分都装在了输送滚轮之下，在拍板（拍板，一种设备动作）之后会去触发<code>M90</code>读板子的 panel id，所以一片板子的产出时机点应该在它与下一片拍板之间，依据现场机台动作的实际情况来选择。可以考虑<strong>移载至放板位</strong>或者<strong>吸板完成后翻板</strong>。</p>
+<p>触发<code>M90</code>相关程序在<code>IOT_MES各功能.gxw</code>中的<code>低M90</code>或<code>高M90</code>，厂内一般都使用DM60（低阶Reader），所以一般只要从<code>低M90</code>中直接复制即可。</p>
+</blockquote>
+<h3 class="atx" id="lessspan-iddouble-quotefunctionnineteendouble-quotegreater设备待生成panel信息写入lessspangreater"><a href="#%E6%94%B6%E6%9D%BF%E6%9C%BA"><span id="functionNineteen">设备待生成Panel信息写入</span></a></h3>
+<p><em>由IOT写入待生成的帐，并将索引值<code>ZR41603</code>变更，设备监控到索引值发生变更，则将IOT写入待生成的帐由<code>ZR41600</code>传送到<code>ZR41700</code>，0.2s后将索引值<code>ZR41603</code>与<code>ZR41703</code>同步，为下一次IOT写入待生成的帐做准备。</em></p>
+<h3 class="atx" id="lessspan-iddouble-quotefunctiontwentydouble-quotegreater收板机退port信号lessspangreater"><a href="#%E6%94%B6%E6%9D%BF%E6%9C%BA"><span id="functionTwenty">收板机退Port信号</span></a></h3>
+<p><em>退Port时将信号<code>B454 ON</code>，如果退Port了<code>ZR4120.0 ON</code>，反之则<code>OFF</code>。退Port（即收板机满板）后，将索引值<code>ZR4121</code>变更，IOT监控到索引值变更，就会采集该信号。此外，满板时会有满板警报，将满板警报消除之后，会将作业片数<code>D2004</code>也清零。</em></p>
+<p>此处和收板机的满载水位<code>ZR4100</code>有关，收板机的<a href="#functionTwentyOne">满载水位</a>也是由IOT控制，若满载水位与作业片数<code>D2004</code>相同，则收板机会退Port。</p>
+<h3 class="atx" id="lessspan-iddouble-quotefunctiontwentyonedouble-quotegreater满盘数量修改lessspangreater"><a href="#%E6%94%B6%E6%9D%BF%E6%9C%BA"><span id="functionTwentyOne">满盘数量修改</span></a></h3>
+<p><em>只有在IOT给定满载水位<code>ZR4100</code>大于等于作业片数<code>D2004</code>，并给出交握请求<code>B404</code>时才会设定设备的满载水位成功，并给出修改成功的信号<code>ZR4101.0 ON</code>，若小于作业片数<code>D2004</code>则修改失败<code>ZR4101.0 OFF</code>。无论修改成功或失败，都会在1s延迟后给出交握回复<code>B405</code>。</em></p>
+<img width="661" alt="" title="" src="./images/2023-09-09-17-31-50-image.png">
+
+<h2 class="atx" id="中间段">中间段</h2>
+<table>
+<thead>
+<tr>
+<th>序号</th>
+<th>设备采集及控制功能</th>
+<th>设备信息</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>9</td>
+<td><a href="#functionNine">设备启停控制</a></td>
+<td>所有设备</td>
+<td>IoT控制设备运行或停止</td>
+</tr>
+<tr>
+<td>12</td>
+<td><a href="#functionTwelveAndThirteen">切换生产信息</a></td>
+<td>所有设备</td>
+<td>当设备生产产品的载具发生变化的时候进行触发。</td>
+</tr>
+<tr>
+<td>13</td>
+<td><a href="#functionTwelveAndThirteen">生产信息切换完成指令</a></td>
+<td>所有设备</td>
+<td>当设备切换生产信息完成时上报给IOT。</td>
+</tr>
+<tr>
+<td>14</td>
+<td><a href="#functionFourteenPcbOut">设备投入 Panel 信号</a></td>
+<td>所有设备</td>
+<td>当Panel板到达设备入口时触发</td>
+</tr>
+<tr>
+<td>15</td>
+<td><a href="#functionFifteenPcbOut">设备产出 Panel 信号</a></td>
+<td>所有设备</td>
+<td>设备在产出Panel板时需要上传IOT 虚拟Panel码信息</td>
+</tr>
+<tr>
+<td>16</td>
+<td><a href="#functionSixteen">删除待生产虚拟 Panel 信息指令</a></td>
+<td>所有设备</td>
+<td>IOT下发 虚拟载具码 + 虚拟Panel码，设备根据两个条件删除待完成队列中的数据</td>
+</tr>
+<tr>
+<td>19</td>
+<td><a href="#functionNineteen">设备待生成 Panel 信息写入</a></td>
+<td>所有设备</td>
+<td>由IOT写入上游设备产出的虚拟Panel信息，写入到本设备中最为待完成数据</td>
+</tr>
+</tbody></table>
+<blockquote>
+<p>中间段这些功能与<strong>收板机</strong>差异不大，所以在此就不多做赘述。</p>
+</blockquote>
+</article>
+</body>
+</html>
